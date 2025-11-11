@@ -7,11 +7,14 @@ db_password=$3
 
 # Start docker
 # Make sure you understand the double pipe operator
+# the '||' operator means 'if the command on the left fails, runs the one on the right
+#so if 'systemctl status docker' fails means docker is not running, it will start Docker
 sudo systemctl status docker || sudo systemctl start docker
 
-# Check container status (try the following cmds on terminal)
+# Check container status (try the following cmd on terminal)
 docker container inspect jrvs-psql
-container_status=$?
+container_status=$?  # $? holds the exit code of the last command (0 for success, any other number for failure)
+
 
 # User switch case to handle create|stop|start options
 case $cmd in
@@ -32,7 +35,9 @@ case $cmd in
   # Create container
 	docker volume create pgdata
   # Start the container
-	docker run --name jrvs-psql -e POSTGRES_USER=$db_username -e POSTGRES_PASSWORD=$db_password -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
+	docker run --name jrvs-psql \
+	-e POSTGRES_USER=$db_username -e POSTGRES_PASSWORD=$db_password\
+	-d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
   # Make sure you understand what's `$?`
 	exit $?
 	;;
