@@ -1,5 +1,6 @@
 
-postgres=# \c host_agent;
+--Script to create host_info table and host_usage table 
+--We assume that 'host_agent' database already exists
 
 --create host_info table
 CREATE TABLE PUBLIC.host_info
