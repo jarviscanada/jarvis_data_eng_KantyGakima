@@ -1,30 +1,28 @@
 #!/bin/sh
 
+# Script to start, stop and create a docker container
+
 # Capture CLI arguments
 cmd=$1
 db_username=$2
 db_password=$3
 
 # Start docker
-# Make sure you understand the double pipe operator
-# the '||' operator means 'if the command on the left fails, runs the one on the right
-#so if 'systemctl status docker' fails means docker is not running, it will start Docker
+# || : If the command on the left fails then run the one on the right
 sudo systemctl status docker || sudo systemctl start docker
 
-# Check container status (try the following cmd on terminal)
-docker container inspect jrvs-psql
-container_status=$?  # $? holds the exit code of the last command (0 for success, any other number for failure)
+# Check container status
+container_status=$? #$? holds the exit code of the last command(0 for success, non-zero for failure)
 
-
-# User switch case to handle create|stop|start options
+# Switch case to handle create|stop|start 
 case $cmd in
   create)
 
   # Check if the container is already created
   if [ $container_status -eq 0 ]; then
-		echo 'Container already exists'
-		exit 1
-	fi
+	  echo 'Container already exists'
+	  exit 1
+  fi
 
   # Check # of CLI arguments
   if [ $# -ne 3 ]; then
@@ -33,13 +31,15 @@ case $cmd in
   fi
 
   # Create container
-	docker volume create pgdata
+  docker volume create pgdata
+
   # Start the container
-	docker run --name jrvs-psql \
-	-e POSTGRES_USER=$db_username -e POSTGRES_PASSWORD=$db_password\
-	-d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
-  # Make sure you understand what's `$?`
-	exit $?
+  docker run --name jrvs-psql \
+	  -e POSTGRES_USER=$db_username -e POSTGRES_PASSWORD=$db_password\
+	  -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
+
+  exit $?
+
 	;;
 
   start|stop)
@@ -50,13 +50,14 @@ case $cmd in
   fi
 
   # Start or stop the container
-	docker container $cmd jrvs-psql
-	exit $?
-	;;
+  docker container $cmd jrvs-psql
+  exit $?
+  ;;
 
   *)
-	echo 'Illegal command'
-	echo 'Commands: start|stop|create'
-	exit 1
-	;;
+	  echo 'Illegal command'
+	  echo 'Commands: start|stop|create'
+	  exit 1
+	  ;;
+#To do: I have to quit the cli to get error message, fix
 esac
