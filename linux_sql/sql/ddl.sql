@@ -1,5 +1,7 @@
 
---Script to create host_info table and host_usage table 
+--Script to create host_info, a table to store hardware specifications and host_usage, a table
+--to store resource usage data
+
 --We assume that 'host_agent' database already exists
 
 --create host_info table
@@ -19,7 +21,6 @@ CREATE TABLE PUBLIC.host_info
   );
 
 --create host_usage table
-
 CREATE TABLE PUBLIC.host_usage
   (
      "timestamp"    TIMESTAMP NOT NULL,
