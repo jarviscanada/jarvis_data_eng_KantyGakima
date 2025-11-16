@@ -12,6 +12,7 @@ db_password=$3
 sudo systemctl status docker || sudo systemctl start docker
 
 # Check container status
+docker container inspect jrvs-psql
 container_status=$? #$? holds the exit code of the last command(0 for success, non-zero for failure)
 
 # Switch case to handle create|stop|start 
@@ -39,8 +40,7 @@ case $cmd in
 	  -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
 
   exit $?
-
-	;;
+  ;;
 
   start|stop)
   # Check instance status; exit 1 if container has not been created
@@ -59,5 +59,5 @@ case $cmd in
 	  echo 'Commands: start|stop|create'
 	  exit 1
 	  ;;
-#To do: I have to quit the cli to get error message, fix
+
 esac
