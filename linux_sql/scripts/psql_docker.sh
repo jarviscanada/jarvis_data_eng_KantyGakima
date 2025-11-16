@@ -12,6 +12,7 @@ db_password=$3
 sudo systemctl status docker || sudo systemctl start docker
 
 # Check container status
+docker container inspect jrvs-psql
 container_status=$? #$? holds the exit code of the last command(0 for success, non-zero for failure)
 
 # Switch case to handle create|stop|start 
