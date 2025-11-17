@@ -1,5 +1,4 @@
-
-#Capture CLI commands
+#capture arguments
 psql_host=$1
 psql_port=$2
 db_name=$3
@@ -21,7 +20,7 @@ memory_free=$(echo "$vmstat_mb" | awk '{print $4}'| tail -n1)
 cpu_idle=$(echo "$vmstat_mb" | awk '{print $15}' | tail -n1)
 cpu_kernel=$(echo "$vmstat_mb" | awk '{print $14}' | tail -n1)
 disk_io=$(vmstat -d | awk '{print $11}' | tail -n1)
-disk_available=$(df -BM / | awk '{print $4}'| sed 's/M//' | tail -n1 ) #sed 's/M//'  for parsing the M as we ony need int
+disk_available=$(df -BM / | awk '{print $4}'| sed 's/M//' | tail -n1 ) #sed 's/M//' for parsing the M as we ony need int
 timestamp=$(vmstat -t | awk '{print $18, $19}' | tail -n1)
 
 # Subquery to find machine id in host_info table

@@ -1,4 +1,4 @@
-
+#Capture and validate arguments
 psql_host=$1
 psql_port=$2
 db_name=$3
@@ -20,7 +20,8 @@ cpu_number=$(echo "$specs" | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
 cpu_architecture=$(echo "$specs"  | egrep "^Architecture:" | awk '{print $2}' | xargs)
 cpu_model=$(echo "$specs" | awk -F': +' '/^Model name:/ {print $2}' | xargs)
 cpu_mhz=$(awk -F': +' '/^cpu MHz/ {print $2}' /proc/cpuinfo | uniq)
-#to do : change L2 cache to MB
+
+#1Mib ~ 1.048 Mb so as L2_cache is set to be an integer i parsed the Mib and just kept the int
 l2_cache=$(echo "$specs" | awk -F': +' '/^L2 cache:/ {print $2}' | awk '{print $1}' | sed 's/[^`0-9]//g' | xargs)
 
 total_mem=$(vmstat --unit M | awk '{print $4}' | tail -n1 | xargs)
