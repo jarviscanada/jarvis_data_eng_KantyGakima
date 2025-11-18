@@ -53,6 +53,7 @@ bash> crontab -e
 ```
 # Implementation
 ## Architecture
+![Architecture Cluster Diagram](assets/Architecture.svg)
 ## Scripts
 - **psql_docker.sh**\
     manages the PostgreSQL Docker container lifecycle. It creates the database container with a contanier volume,
