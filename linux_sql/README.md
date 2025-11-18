@@ -6,7 +6,7 @@ This system runs locally on each machine and reports those metrics to a PostgreS
 The Project is using several core technologies:
 - Bash for scripting and automation,
 - Docker to containerize PostgreSQL instance,
-- SQL to create the host database that will store the metrics
+- SQL to create the host database that will store the metrics,
 - Git for version control and code review,
 - Linux utilities: vmstat, lscpu, df, crontab ,for data collection and automation
 
@@ -38,11 +38,11 @@ The Project is using several core technologies:
     ```
 3. Insert hardware specifications data into the Database using `host_info.sh`
 ```
-./scripts/hots_info.sh localhost pswl_port <db_name> <db_username><db_password>
+./scripts/hots_info.sh localhost psql_port <db_name> <db_username> <db_password>
 ```
 4. Insert hardware usage data into the Database using `host_usage.sh`
 ```
-./scripts/host_usage.sh localhost psql_port <db_name> <db_username><db_password>
+./scripts/host_usage.sh localhost psql_port <db_name> <db_username> <db_password>
 ```
 5. Crontab setup to automate hardware usage data insertion into the database
 ```
@@ -52,7 +52,7 @@ bash> crontab -e
  > /tmp/host_usage.log
 ```
 # Implementation
-The Linux cluster monitoring agent is implemented using a client-server system, each host acts as a monitoring agent and
+The Linux cluster monitoring agent is implemented using a client-server model, each host acts as a monitoring agent and
 reports its data to a PostgreSQL database.\
 The implementation is done in three major parts:
 1. **Database setup and containerization:** A postgreSQL instance is created inside a Docker container with `script/psql docker.sh`
@@ -100,7 +100,7 @@ The implementation is done in three major parts:
     * * * * * bash /path/to/host_usage.sh localhost psql_port <db_name> <db_username> <db_password>
     ```
 - **ddl.sql**\
-  Initializes the PostgreSQL Database by creating two tables: host_info and host_usage
+  Initializes the PostgreSQL Database by creating two tables: host_info and host_usage.
   It also defines the primary keys, foreign keys, and constraints.
 
   Usage:
@@ -156,7 +156,7 @@ This project is deployed using GitHub, Docker, a Database, and Crontab.
 # Improvements
 - **Add automated tests for the Bash scripts**: The scripts are tested manually by running them and verifying the results.
   It would be more efficient to automate tests  for argument validation, error handling, and other types of errors to make
-  the project will be more reliable and easier to maintain.
+  the project  more reliable and easier to maintain.
 
 
 - **Automate crontab setup** : The cron job must be added manually using `crontab -e`. An improvement would be to provide
@@ -167,6 +167,6 @@ This project is deployed using GitHub, Docker, a Database, and Crontab.
 - **Add a primary key to `host_usage` table** :
   Currently, the `host_usage` table does not have a primary key, which means that there is no uniqueness constraint.
   An improvement would be to add a primary key or composite primary key to improve data integrity and make queries on
-  records more efficiently later on.
+  records more efficient later on.
     
 
