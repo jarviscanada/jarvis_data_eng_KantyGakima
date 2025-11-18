@@ -52,24 +52,24 @@ bash> crontab -e
  > /tmp/host_usage.log
 ```
 # Implementation
-The linux cluster monitoring agent is implemented using a client server system, each host act as a monitoring agent and
+The Linux cluster monitoring agent is implemented using a client-server system, each host acts as a monitoring agent and
 reports its data to a PostgreSQL database.\
 The implementation is done in three major parts:
 1. **Database setup and containerization:** A postgreSQL instance is created inside a Docker container with `script/psql docker.sh`
-    
-    sql\ddl.sql script initializes the database schema and created the required tables.
+
+   `sql\ddl.sql` script initializes the database schema and creates the required tables.
 2. **Data collection**: Two bash scripts `host_info.sh` and `host_usage.sh` collect the needed data using Linux utilities such as
-`hostname`,`lscpu`,`vmstat` etc.
+   `hostname`,`lscpu`,`vmstat`, etc.
     - `scripts/host_info.sh` collects hardware specifications and insert them into `host_info` table.
     - `script/host_usage.sh` collects resource usage data and inserts them into `host_usage`table.
 3. **Automation with Crontab**: A cron job runs `host_usage.sh` every minute to ensure automatic data collection.
-    
+
 ## Architecture
 ![Architecture Cluster Diagram](assets/Architecture.svg)
 ## Scripts
 - **psql_docker.sh**\
-  manages the PostgreSQL Docker container lifecycle. It creates the database container with a contanier volume,
-  starts or stops the contaniner.
+  manages the PostgreSQL Docker container lifecycle. It creates the database container with a container volume,
+  starts or stops the container.
 
   Usage:
     ```
@@ -93,7 +93,7 @@ The implementation is done in three major parts:
     ./scripts/host_usage.sh localhost psql_port <db_name> <db_username> <db_password>
     ```
 - **Crontab**\
-  It is used to collect resource data usage automatically every minute and store it in host_usage table
+  It is used to collect resource data usage automatically every minute and store it in host_usage table.
 
   Usage:
     ```
@@ -154,5 +154,19 @@ This project is deployed using GitHub, Docker, a Database, and Crontab.
 - Database initialization: `sql/ddl.sql` is executed on host_agent database to create `host_info` and `host_usage` tables
 - Crontab: A cron job was added using `crontab -e` to execute host_usage.sh every minute automatically.
 # Improvements
+- **Add automated tests for the Bash scripts**: The scripts are tested manually by running them and verifying the results.
+  It would be more efficient to automate tests  for argument validation, error handling, and other types of errors to make
+  the project will be more reliable and easier to maintain.
 
+
+- **Automate crontab setup** : The cron job must be added manually using `crontab -e`. An improvement would be to provide
+  a setup script that automatically configures the cron entry for the user. This will ensure consistency across all machines
+  especially in a multi-host environment.
+
+
+- **Add a primary key to `host_usage` table** :
+  Currently, the `host_usage` table does not have a primary key, which means that there is no uniqueness constraint.
+  An improvement would be to add a primary key or composite primary key to improve data integrity and make queries on
+  records more efficiently later on.
+    
 
