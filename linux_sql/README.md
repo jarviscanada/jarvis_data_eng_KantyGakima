@@ -142,7 +142,7 @@ SELECT * FROM host_info;
 SELECT * FROM host_usage;
 ```
 
-* **scrpts/host_info.sh and scripts/host_usage.sh:** First run the linux commands to collect data such as
+* **scripts/host_info.sh and scripts/host_usage.sh:** First run the linux commands to collect data such as
   `vmstat --unit M`, `lscpu` to verify the expected values.\
   Run the scripts and verify that new entries appear in the tables with the SELECT command as previously.
 
