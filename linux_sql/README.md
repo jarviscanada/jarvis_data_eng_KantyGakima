@@ -8,15 +8,15 @@ The Project is using several core technologies:
 - Docker to containerize PostgreSQL instance,
 - SQL to create the host database that will store the metrics
 - Git for version control and code review,
-- Linux utilities: vmstat, lscpu, df, crontab for data collection and automation
+- Linux utilities: vmstat, lscpu, df, crontab ,for data collection and automation
 
 # Quick Start
-1. Start a psql instance using psql_docker.sh
+1. Start a psql instance using `psql_docker.sh`
 ```
 ./scripts/psql_docker.sh create <db_username><db_password>
 ./scripts/psql_docker.sh start
 ```
-2. Create tables using ddl.sql
+2. Create tables using `ddl.sql`
 
 * Create host database if it does not exist already using the psql command line:
     ```
@@ -32,15 +32,15 @@ The Project is using several core technologies:
     --connect to a database
     postgres=# \c <db_name>;
     ```
-* Create the tables with ddl.sql
+* Create the tables with `ddl.sql`
     ```
     psql -h localhost -U <db_username> -d <db_name> -f sql/ddl.sql
     ```
-3. Insert hardware specifications data into the Database using host_info.sh
+3. Insert hardware specifications data into the Database using `host_info.sh`
 ```
 ./scripts/hots_info.sh localhost pswl_port <db_name> <db_username><db_password>
 ```
-4. Insert hardware usage data into the Database using host_usage.sh
+4. Insert hardware usage data into the Database using `host_usage.sh`
 ```
 ./scripts/host_usage.sh localhost psql_port <db_name> <db_username><db_password>
 ```
@@ -52,7 +52,18 @@ bash> crontab -e
  > /tmp/host_usage.log
 ```
 # Implementation
-
+The linux cluster monitoring agent is implemented using a client server system, each host act as a monitoring agent and
+reports its data to a PostgreSQL database.\
+The implementation is done in three major parts:
+1. **Database setup and containerization:** A postgreSQL instance is created inside a Docker container with `script/psql docker.sh`
+    
+    sql\ddl.sql script initializes the database schema and created the required tables.
+2. **Data collection**: Two bash scripts `host_info.sh` and `host_usage.sh` collect the needed data using Linux utilities such as
+`hostname`,`lscpu`,`vmstat` etc.
+    - `scripts/host_info.sh` collects hardware specifications and insert them into `host_info` table.
+    - `script/host_usage.sh` collects resource usage data and inserts them into `host_usage`table.
+3. **Automation with Crontab**: A cron job runs `host_usage.sh` every minute to ensure automatic data collection.
+    
 ## Architecture
 ![Architecture Cluster Diagram](assets/Architecture.svg)
 ## Scripts
@@ -98,7 +109,7 @@ bash> crontab -e
     ```
 
 ## Database Modeling
-- `host_info'
+- `host_info`
 ```
 | id          | hostname     | cpu_number          | cpu_architecture | cpu_model      | cpu_mhz   | l2_cache                       | "timestamp"                       | total_mem                                    |
 | ----------- | ------------ | ------------------- | ---------------- | ---------------| --------  | ------------------------------ | --------------------------------  | -------------------------------------------- |
@@ -113,10 +124,10 @@ bash> crontab -e
 
 # Test
 Here are the different steps to test the bash scripts:
-* **scripts/psql_docker.sh:** use docker ps -a to ckeck if the docker container has been created or is running.\
+* **scripts/psql_docker.sh:** use `docker ps -a` to ckeck if the docker container has been created or is running.\
   Test the start and stop commands.
 * **sql/sql.ddl:** connect to host_agent database and execute \dt to make sure the tables were created correctly.
-  Manually insert sample rows into host_info and host_usage to verify data formatting and key relationships.
+  Manually insert sample rows into `host_info` and `host_usage` to verify data formatting and key relationships.
 ```
 Ex:
 INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, "timestamp",
@@ -132,17 +143,16 @@ SELECT * FROM host_usage;
 ```
 
 * **scrpts/host_info.sh and scripts/host_usage.sh:** First run the linux commands to collect data such as
-  'vmstat --unit M', 'lscpu' to verify the expected values.\
+  `vmstat --unit M`, `lscpu` to verify the expected values.\
   Run the scripts and verify that new entries appear in the tables with the SELECT command as previously.
 
 # Deployment
 This project is deployed using GitHub, Docker, a Database, and Crontab.
-to automate data collection
 - GitHub: The project is pushed into a GitHub repository for collaboration, version control, and to be able to reuse the code
-- Docker: A PostgreSQL instance is deployed inside a Docker container with script/psql_docker.sh that automates  
+- Docker: A PostgreSQL instance is deployed inside a Docker container with `script/psql_docker.sh` that automates  
   container creation, startup, and shutdown.
-- Database initialization: sql/ddl.sql is executed on host_agent database to create host_info and host_usage tables
-- Crontab: A cron job was added using crontab -e to execute host_usage.sh every minute automatically.
+- Database initialization: `sql/ddl.sql` is executed on host_agent database to create `host_info` and `host_usage` tables
+- Crontab: A cron job was added using `crontab -e` to execute host_usage.sh every minute automatically.
 # Improvements
 
 
