@@ -52,6 +52,7 @@ bash> crontab -e
  > /tmp/host_usage.log
 ```
 # Implementation
+
 ## Architecture
 ![Architecture Cluster Diagram](assets/Architecture.svg)
 ## Scripts
@@ -101,7 +102,13 @@ bash> crontab -e
 ```
 | id          | hostname     | cpu_number          | cpu_architecture | cpu_model      | cpu_mhz   | l2_cache                       | "timestamp"                       | total_mem                                    |
 | ----------- | ------------ | ------------------- | ---------------- | ---------------| --------  | ------------------------------ | --------------------------------  | -------------------------------------------- |
-| Primary key | host machine | Number of CPU cores | eg: x 86_64      | CPU model name | CPU speed | L2 cache size on the CPU in MB | real-time  when info is collected | Total memory available on host machine in MB | 
+| Primary key | host machine | Number of CPU cores | eg: x 86_64      | CPU model name | CPU speed | L2 cache size on the CPU in MB | Time  when Data is collected      | Total memory available on host machine in MB | 
+```
+- `host_usage`
+```
+| timestamp                    | host_id                                                          | memory_free       | cpu_idle                          | cpu_kernel                   | disk_io                        | disk_available             | 
+| ---------------------------- | ---------------------------------------------------------------- | ----------------- | --------------------------------- | ---------------------------- | ------------------------------ | -------------------------- | 
+| Time  when Data is collected | reference to `host_info.id` indicating which host for these data | free memory in MB | % of CPU time spent in idle state |% of CPU time spent in kernel | Number of in out operations    | Available disk space in MB | 
 ```
 
 # Test
