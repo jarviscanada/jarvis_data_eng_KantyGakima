@@ -98,6 +98,29 @@ bash> crontab -e
 ## Database Modeling
 
 # Test
+Here are the different steps to test the bash scripts:
+* **scripts/psql_docker.sh:** use docker ps -a to ckeck if the docker container has been created or is running.\
+Test the start and stop commands.
+* **sql/sql.ddl:** connect to host_agent database and execute \dt to make sure the tables \
+  were created correctly.
+  Manually Insert samaple rows into host_info and host_usage to verify data formatting and key relationships.
+```
+Ex:
+INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, "timestamp",
+total_mem) VALUES(1, 'jrvs-remote-desktop-centos7-6.us-central1-a.c.spry-framework-236416.internal', 1, 'x86_64', 
+'Intel(R) Xeon(R) CPU @ 2.30GHz', 2300, 256, '2019-05-29 17:49:53.000', 601324);
+
+INSERT INTO host_usage ("timestamp", host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available) 
+VALUES('2019-05-29 15:00:00.000', 1, 300000, 90, 4, 2, 3);
+
+--Verify the inserted data
+SELECT * FROM host_info;
+SELECT * FROM host_usage;
+```
+  
+* **scrpts/host_info.sh and scripts/host_usage.sh:** First run the linux commands to collect data such as 'vmstat --unit M', 'lscpu' to verify \
+the expected values.\
+  Run the scripts and verify that new entries appears in the tables with the SELECT command as previously.
 
 # Deployment
 # Improvements
