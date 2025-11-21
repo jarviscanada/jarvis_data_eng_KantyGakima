@@ -1,12 +1,14 @@
 
 --Solutions to practice query questions
+
+--Question1
 INSERT INTO cd.facilities
  (
     facid,name,membercost,guestcost,initialoutlay,monthlymaintenance
   )
 VALUES
   (9, 'Spa', 20, 30, 100000, 800);
-
+--Question2
 INSERT INTO cd.facilities
  (
   facid, name, membercost, guestcost, initialoutlay, monthlymaintenance
@@ -18,10 +20,12 @@ SELECT
     FROM
       cd.facilities
   )+ 1, 'Spa', 20, 30, 100000, 800;
-
+--Question3
 UPDATE cd.facilities
     set initialoutlay = 10000
     where facid = 1;
+
+--Question4
 update
   cd.facilities f1
 set
@@ -43,9 +47,9 @@ set
   )
 where
   f1.facid = 1;
-
+--Question5
 TRUNCATE TABLE cd.bookings
-
+--question6
 DELETE FROM
   cd.members
 where
