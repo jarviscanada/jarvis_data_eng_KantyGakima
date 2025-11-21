@@ -1,5 +1,4 @@
 
-
 --Solutions to practice query questions
 INSERT INTO cd.facilities
  (

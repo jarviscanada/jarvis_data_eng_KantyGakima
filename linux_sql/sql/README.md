@@ -29,6 +29,7 @@ SELECT
       cd.facilities
   )+ 1, 'Spa', 20, 30, 100000, 800;
 ```
+
 ###### Question 3: Update initial outlay for tenis court 2 in cd.facilities table
 ```sql
 UPDATE cd.facilities
