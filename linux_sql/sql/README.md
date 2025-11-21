@@ -37,7 +37,27 @@ UPDATE cd.facilities
 ```
 ###### Question 4: alter the price of the second tennis court so that it costs 10% more than the first one.
 ```sql
-
+update
+  cd.facilities f1
+set
+  membercost = (
+    select
+      membercost * 1.1
+    from
+      cd.facilities
+    where
+      facid = 0
+  ),
+  guestcost = (
+    select
+      guestcost * 1.1
+    from
+      cd.facilities
+    where
+      facid = 0
+  )
+where
+  f1.facid = 1;
 ```
 ###### Question 5: delete all bookings from the cd.bookings table
 ```sqli

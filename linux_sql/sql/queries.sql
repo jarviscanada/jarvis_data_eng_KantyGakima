@@ -1,7 +1,6 @@
 
 
 --Solutions to practice query questions
-
 INSERT INTO cd.facilities
  (
     facid,name,membercost,guestcost,initialoutlay,monthlymaintenance
