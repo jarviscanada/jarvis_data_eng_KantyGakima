@@ -8,7 +8,7 @@ INSERT INTO
   )
 VALUES
   (9, 'Spa', 20, 30, 100000, 800);
-```
+
 
 -- Question 2: Insert values into cd.facilities with automatic generation of facid numbers
 INSERT INTO cd.facilities 
@@ -63,9 +63,9 @@ DELETE FROM
   cd.members 
 where 
   memid = 37;
-```
+
 --Question 7 : List facilities with member cost > 0 and less than 1/50 of maintenance cosy
-```sql
+
 SELECT 
   facid, 
   name, 
