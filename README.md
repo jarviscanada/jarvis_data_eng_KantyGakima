@@ -4,11 +4,11 @@ Computer Science graduate with practical experience in software development, dat
 
 ## Skills
 
-**Proficient:** Java, Python, SQL (PostgreSQL, MySQL), Linux/Bash, Agile/Scrum, Git
+**Proficient:** Java, Python, SQL (PostgreSQL, MySQL), Linux/Bash, Pandas/Numpy, Agile/Scrum, Git
 
 **Competent:** Docker, REACT, JUnit, Data modeling and ETL concepts, Cloud fundamentals (GCP/AWS concepts)
 
-**Familiar:** Donec, fermentum, fermentum, fermentum, fermentum
+**Familiar:** Power BI, MongoDB, PHP, C++, Apache Spark
 
 ## Jarvis Projects
 
@@ -26,7 +26,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KantyGakim
 
 ## Professional Experiences
 
-**Data Engineer, Jarvis (2025-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Data Engineer, Jarvis (2025-present)**: Designed and developed data workflows and backend components using SQL, Python, Java, Bash, and Linux-based tooling. Implemented automation scripts and containerized environments with Docker. Collaborated within an Agile team using Git to deliver maintainable and well-structured solutions.
 
 **Technical Assistant (Part-time), Université de Montréal - Philanthropy and Alumni Department (2022-Present)**: Managed, validated, and updated alumni and donor data in compliance with governance and confidentiality standards. Supported outreach campaigns by conducting high-volume outbound calls and analyzing performance results to refine scripts and improve interaction quality. Contributed to onboarding and training by enhancing internal documentation, updating workflows, and providing guidance to new assistants.
 
@@ -38,6 +38,3 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KantyGakim
 
 
 ## Miscellaneous
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam

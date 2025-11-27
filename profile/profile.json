@@ -29,20 +29,11 @@
     }
   ],
   "name": "Kanty Gakima",
-  "others": [
-    {
-      "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
-      ],
-      "title": "Activities/Hobbies"
-    }
-  ],
+  "others": [],
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
+      "description": "Designed and developed data workflows and backend components using SQL, Python, Java, Bash, and Linux-based tooling. Implemented automation scripts and containerized environments with Docker. Collaborated within an Agile team using Git to deliver maintainable and well-structured solutions.",
       "duration": "2025-present",
       "title": "Data Engineer"
     },
@@ -68,17 +59,18 @@
       "Cloud fundamentals (GCP/AWS concepts)"
     ],
     "familiar": [
-      "Donec",
-      "fermentum",
-      "fermentum",
-      "fermentum",
-      "fermentum"
+      "Power BI",
+      "MongoDB",
+      "PHP",
+      "C++",
+      "Apache Spark"
     ],
     "proficient": [
       "Java",
       "Python",
       "SQL (PostgreSQL, MySQL)",
       "Linux/Bash",
+      "Pandas/Numpy",
       "Agile/Scrum",
       "Git"
     ]

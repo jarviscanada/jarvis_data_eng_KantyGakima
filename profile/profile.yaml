@@ -15,6 +15,7 @@ skills:
     - Python
     - SQL (PostgreSQL, MySQL)
     - Linux/Bash
+    - Pandas/Numpy
     - Agile/Scrum
     - Git
   # At least 5 skills
@@ -26,11 +27,11 @@ skills:
     - Cloud fundamentals (GCP/AWS concepts)
   # At least 5 skills
   familiar:
-    - Donec
-    - fermentum
-    - fermentum
-    - fermentum
-    - fermentum
+    - Power BI
+    - MongoDB
+    - PHP
+    - C++
+    - Apache Spark
 
 # List of Jarvis projects
 jarvis_projects:
@@ -63,7 +64,7 @@ professional_experience:
     company: "Jarvis"
     duration: "2025-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
+    description: "Designed and developed data workflows and backend components using SQL, Python, Java, Bash, and Linux-based tooling. Implemented automation scripts and containerized environments with Docker. Collaborated within an Agile team using Git to deliver maintainable and well-structured solutions."
   - title: "Technical Assistant (Part-time)"
     company: "Université de Montréal - Philanthropy and Alumni Department"
     duration: "2022-Present"
@@ -85,9 +86,5 @@ education:
 
 
 #Optional section
-others:
-  - title: "Activities/Hobbies"
-    bullets:
-      - "Basketball player"
-      - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+others: []
+
