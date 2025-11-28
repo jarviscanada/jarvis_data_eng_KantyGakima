@@ -5,7 +5,11 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_KantyGakim
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Computer Science graduate with practical experience in software development, data processing, and data-driven applications. I have worked extensively with Python, SQL, Bash, and Java through academic and hands-on projects, and developed strong analytical abilities, attention to detail, and clear technical communication through technical support and client-facing roles. I am interested in opportunities in data engineering, data analytics, or related technical fields, where I can contribute to building data pipelines, automation workflows, and efficient, well-structured solutions.
+summary: >
+  Computer Science graduate with practical experience in software development, data processing, and data-driven applications. Skilled in Python, SQL, Bash, and Java through academic and hands-on projects. Interested in opportunities in
+  data engineering, data analytics, or related technical fields, contributing to the development of data pipelines, automation
+  workflows, and efficient, well-structured solutions.
+
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
@@ -22,7 +26,7 @@ skills:
   competent:
     - Docker
     - REACT
-    - Data modeling and ETL concepts
+    - Data modelling and ETL concepts
     - Cloud fundamentals (GCP/AWS concepts)
     - JUnit
     - JavaScript
@@ -42,28 +46,29 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
-      Implemented a distributed monitoring agent using Bash/Shell scripts to capture hardware specifications and real-time resource metrics across multiple hosts. 
-      Deployed a Docker-containerized PostgreSQL database to store collected data and automated ingestion using crontab. 
-      The solution provides continuous, minute-level data collection suitable for data analytics, performance monitoring, and maintenance.
+      Implemented a monitoring agent using Bash/Shell scripts and Linux utilities to collect hardware specifications and real-time usage metrics from multiple hosts. 
+      Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous ingestion using crontab. 
+      The system provides a centralized, reliable data pipeline for performance monitoring, analytics, and maintenance.
 
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
-    #project name
+  #project name
   - name: "International Data analysis"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
       Conducted a data analysis project focused on collecting, cleaning and transforming socio-economic and demographic indicators extracted from multiple Wikipedia data tables,
-      using Python, Pandas, and NumPy, and Jupyter Notebook. Applied standard data preprocessing and exploratory analysis methods to identify and visualize patterns across countries.
+      using Python, Pandas, NumPy, and Jupyter Notebook. Applied standard data preprocessing and exploratory analysis methods to identify and visualize patterns across countries.
   - name: "Recipe Management Web App"
     git_url: "https://github.com/Kanty-G/Recipe-management-application.git"
     description: >
-      Developed a full-stack web application in a two-person team, that enables users to create, organize, and manage recipe tiles with real-time updates across all corrected users.
+      Developed a full-stack web application in a two-person team, that enables users to create, organize, and manage recipe tiles with real-time updates across all connected users.
       Built with PHP, MySQL, JavaScript, HTML, and CSS, using a REST API and asynchronous fetch requests to support CRUD operations and instant synchronization.
-  
 
   - name: "Travel reservation system"
-    description: Developed a Java-based reservation system focused on structured data modeling and system logic. Designed core components using object-oriented principles and UML diagrams with Visual paradigms, implemented key workflows for managing reservations, and validated functionality through unit testing with Junit. The project emphasized clean data structures, reliable application logic, and maintainable code architecture aligned with engineering best practices.
+    description: >
+      Developed a Java-based reservation system centered on structured data modelling and system logic. Designed core components using object-oriented principles and UML diagrams in Visual Paradigm,
+      implemented reservation workflows, and validated functionality with JUnit tests. The project focused on clean data structures, reliable application logic, and maintainable code aligned with software engineering best practices.
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
@@ -87,12 +92,12 @@ professional_experience:
 
 
 #List of education
-education: 
+education:
   - school_name: "Université de Montréal"
     duration: "2022-2024"
     degree: "Bachelor of Science"
     department: "Computer Science"
-    awards_achievements: []
+    awards_achievements:
 
 
 #Optional section

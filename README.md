@@ -1,12 +1,13 @@
 # Kanty Gakima . Jarvis Consulting
 
-Computer Science graduate with practical experience in software development, data processing, and data-driven applications. I have worked extensively with Python, SQL, Bash, and Java through academic and hands-on projects, and developed strong analytical abilities, attention to detail, and clear technical communication through technical support and client-facing roles. I am interested in opportunities in data engineering, data analytics, or related technical fields, where I can contribute to building data pipelines, automation workflows, and efficient, well-structured solutions.
+Computer Science graduate with practical experience in software development, data processing, and data-driven applications. Skilled in Python, SQL, Bash, and Java through academic and hands-on projects. Interested in opportunities in data engineering, data analytics, or related technical fields, contributing to the development of data pipelines, automation workflows, and efficient, well-structured solutions.
+
 
 ## Skills
 
 **Proficient:** Java, Python, SQL (PostgreSQL, MySQL), Linux/Bash, Pandas/Numpy, Agile/Scrum, Git
 
-**Competent:** Docker, REACT, Data modeling and ETL concepts, Cloud fundamentals (GCP/AWS concepts), JUnit, JavaScript
+**Competent:** Docker, REACT, Data modelling and ETL concepts, Cloud fundamentals (GCP/AWS concepts), JUnit, JavaScript
 
 **Familiar:** Power BI, MongoDB, REST API, PHP, C++, Apache Spark
 
@@ -15,18 +16,19 @@ Computer Science graduate with practical experience in software development, dat
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git)
 
 
-**Linux Cluster Resource Monitoring App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git/tree/master/linux_sql)]: Implemented a distributed monitoring agent using Bash/Shell scripts to capture hardware specifications and real-time resource metrics across multiple hosts.  Deployed a Docker-containerized PostgreSQL database to store collected data and automated ingestion using crontab.  The solution provides continuous, minute-level data collection suitable for data analytics, performance monitoring, and maintenance.
+**Linux Cluster Resource Monitoring App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git/tree/master/linux_sql)]: Implemented a monitoring agent using Bash/Shell scripts and Linux utilities to collect hardware specifications and real-time usage metrics from multiple hosts.  Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous ingestion using crontab.  The system provides a centralized, reliable data pipeline for performance monitoring, analytics, and maintenance.
 
 
 
 ## Highlighted Projects
-**International Data analysis**: Conducted a data analysis project focused on collecting, cleaning and transforming socio-economic and demographic indicators extracted from multiple Wikipedia data tables, using Python, Pandas, and NumPy, and Jupyter Notebook. Applied standard data preprocessing and exploratory analysis methods to identify and visualize patterns across countries.
+**International Data analysis**: Conducted a data analysis project focused on collecting, cleaning and transforming socio-economic and demographic indicators extracted from multiple Wikipedia data tables, using Python, Pandas, NumPy, and Jupyter Notebook. Applied standard data preprocessing and exploratory analysis methods to identify and visualize patterns across countries.
 
 
-**Recipe Management Web App** [[GitHub](https://github.com/Kanty-G/Recipe-management-application.git)]: Developed a full-stack web application in a two-person team, that enables users to create, organize, and manage recipe tiles with real-time updates across all corrected users. Built with PHP, MySQL, JavaScript, HTML, and CSS, using a REST API and asynchronous fetch requests to support CRUD operations and instant synchronization.
+**Recipe Management Web App** [[GitHub](https://github.com/Kanty-G/Recipe-management-application.git)]: Developed a full-stack web application in a two-person team, that enables users to create, organize, and manage recipe tiles with real-time updates across all connected users. Built with PHP, MySQL, JavaScript, HTML, and CSS, using a REST API and asynchronous fetch requests to support CRUD operations and instant synchronization.
 
 
-**Travel reservation system**: Developed a Java-based reservation system focused on structured data modeling and system logic. Designed core components using object-oriented principles and UML diagrams with Visual paradigms, implemented key workflows for managing reservations, and validated functionality through unit testing with Junit. The project emphasized clean data structures, reliable application logic, and maintainable code architecture aligned with engineering best practices.
+**Travel reservation system**: Developed a Java-based reservation system centered on structured data modelling and system logic. Designed core components using object-oriented principles and UML diagrams in Visual Paradigm, implemented reservation workflows, and validated functionality with JUnit tests. The project focused on clean data structures, reliable application logic, and maintainable code aligned with software engineering best practices.
+
 
 
 ## Professional Experiences
