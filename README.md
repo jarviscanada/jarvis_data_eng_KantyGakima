@@ -1,6 +1,6 @@
 # Kanty Gakima . Jarvis Consulting
 
-Computer Science graduate from the Université de Montréal with  hands-on experience in software development, data processing, and building data-driven tools. Currently working as a Data Engineer at Jarvis, where I design and implement data workflows, automation scripts, and backend components using Python, SQL, Java, Bash, Docker, and Linux-based tooling. I work within an Agile/Scrum environment, collaborating with the team to deliver reliable, well-structured solutions. Through both Jarvis projects and academic work, I have developed a strong foundation in data modelling, pipeline development, and efficient problem-solving. Eager to apply my skills in data engineering, analytics, or related fields while continuing to grow my expertise.
+Computer Science graduate from Université de Montréal with  hands-on experience in software development, data processing, and building data-driven tools. Currently working as a Data Engineer at Jarvis, where I design and implement data workflows, automation scripts, and backend components using Python, SQL, Java, Bash, Docker, and Linux-based tooling. I work within an Agile/Scrum environment, collaborating with the team to deliver reliable, well-structured solutions. Through both Jarvis projects and academic work, I have developed a strong foundation in data modelling, pipeline development, and efficient problem-solving. Eager to apply my skills in data engineering, analytics, or related fields while continuing to grow my expertise.
 
 
 ## Skills
