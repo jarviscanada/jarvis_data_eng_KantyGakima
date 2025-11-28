@@ -41,7 +41,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KantyGakim
 
 
 ## Education
-**Université de Montréal (2022-2024)**, Bachelor of Science, Computer Science (Relevant coursework : Algorithms & Data Structures, Databases, Data Science, Web Development, Object-Oriented Programming, Software Design, Machine Learning, Probability & Statistics)
+**Université de Montréal (2022-2024)**, **Bachelor of Science**, **Computer Science** (Relevant coursework : Algorithms & Data Structures, Databases, Data Science, Web Development, Object-Oriented Programming, Software Design, Machine Learning, Probability & Statistics)
 
 
 ## Miscellaneous

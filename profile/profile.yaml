@@ -100,8 +100,8 @@ professional_experience:
 education:
   - school_name: "Université de Montréal"
     duration: "2022-2024"
-    degree: "Bachelor of Science"
-    department: "Computer Science (Relevant coursework : Algorithms & Data Structures, Databases, Data Science, Web Development, Object-Oriented Programming,
+    degree: "**Bachelor of Science**"
+    department: "**Computer Science** (Relevant coursework : Algorithms & Data Structures, Databases, Data Science, Web Development, Object-Oriented Programming,
       Software Design, Machine Learning, Probability & Statistics)"
     awards_achievements : []
 
