@@ -22,13 +22,15 @@ skills:
   competent:
     - Docker
     - REACT
-    - JUnit
     - Data modeling and ETL concepts
     - Cloud fundamentals (GCP/AWS concepts)
+    - JUnit
+    - JavaScript
   # At least 5 skills
   familiar:
     - Power BI
     - MongoDB
+    - REST API
     - PHP
     - C++
     - Apache Spark
@@ -39,21 +41,29 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Implemented a distributed monitoring agent using Bash/shell scripts to capture hardware specifications and real-time resource metrics across multiple hosts. Deployed a docker containerized PostgreSQL database to store the collected data and automated the ingestion using crontab. The solution provides continuous, minute-level data collection suitable for data analytics, performance monitoring and maintenance.
-
+    description: >
+      Implemented a distributed monitoring agent using Bash/Shell scripts to capture hardware specifications and real-time resource metrics across multiple hosts. 
+      Deployed a Docker-containerized PostgreSQL database to store collected data and automated ingestion using crontab. 
+      The solution provides continuous, minute-level data collection suitable for data analytics, performance monitoring, and maintenance.
 
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
     #project name
-  - name: "Web app for resturant"
-    #URL is optional
-    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+  - name: "International Data analysis"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-  - name: "Machine Learning"
-    git_url:
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+    description: >
+      Conducted a data analysis project focused on collecting, cleaning and transforming socio-economic and demographic indicators extracted from multiple Wikipedia data tables,
+      using Python, Pandas, and NumPy, and Jupyter Notebook. Applied standard data preprocessing and exploratory analysis methods to identify and visualize patterns across countries.
+  - name: "Recipe Management Web App"
+    git_url: "https://github.com/Kanty-G/Recipe-management-application.git"
+    description: >
+      Developed a full-stack web application in a two-person team, that enables users to create, organize, and manage recipe tiles with real-time updates across all corrected users.
+      Built with PHP, MySQL, JavaScript, HTML, and CSS, using a REST API and asynchronous fetch requests to support CRUD operations and instant synchronization.
+  
+
+  - name: "Travel reservation system"
+    description: Developed a Java-based reservation system focused on structured data modeling and system logic. Designed core components using object-oriented principles and UML diagrams with Visual paradigms, implemented key workflows for managing reservations, and validated functionality through unit testing with Junit. The project emphasized clean data structures, reliable application logic, and maintainable code architecture aligned with engineering best practices.
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).

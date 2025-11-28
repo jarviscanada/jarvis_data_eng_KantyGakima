@@ -6,22 +6,27 @@ Computer Science graduate with practical experience in software development, dat
 
 **Proficient:** Java, Python, SQL (PostgreSQL, MySQL), Linux/Bash, Pandas/Numpy, Agile/Scrum, Git
 
-**Competent:** Docker, REACT, JUnit, Data modeling and ETL concepts, Cloud fundamentals (GCP/AWS concepts)
+**Competent:** Docker, REACT, Data modeling and ETL concepts, Cloud fundamentals (GCP/AWS concepts), JUnit, JavaScript
 
-**Familiar:** Power BI, MongoDB, PHP, C++, Apache Spark
+**Familiar:** Power BI, MongoDB, REST API, PHP, C++, Apache Spark
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git)
 
 
-**Linux Cluster Resource Monitoring App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git/tree/master/linux_sql)]: Implemented a distributed monitoring agent using Bash/shell scripts to capture hardware specifications and real-time resource metrics across multiple hosts. Deployed a docker containerized PostgreSQL database to store the collected data and automated the ingestion using crontab. The solution provides continuous, minute-level data collection suitable for data analytics, performance monitoring and maintenance.
+**Linux Cluster Resource Monitoring App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git/tree/master/linux_sql)]: Implemented a distributed monitoring agent using Bash/Shell scripts to capture hardware specifications and real-time resource metrics across multiple hosts.  Deployed a Docker-containerized PostgreSQL database to store collected data and automated ingestion using crontab.  The solution provides continuous, minute-level data collection suitable for data analytics, performance monitoring, and maintenance.
+
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**International Data analysis**: Conducted a data analysis project focused on collecting, cleaning and transforming socio-economic and demographic indicators extracted from multiple Wikipedia data tables, using Python, Pandas, and NumPy, and Jupyter Notebook. Applied standard data preprocessing and exploratory analysis methods to identify and visualize patterns across countries.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+
+**Recipe Management Web App** [[GitHub](https://github.com/Kanty-G/Recipe-management-application.git)]: Developed a full-stack web application in a two-person team, that enables users to create, organize, and manage recipe tiles with real-time updates across all corrected users. Built with PHP, MySQL, JavaScript, HTML, and CSS, using a REST API and asynchronous fetch requests to support CRUD operations and instant synchronization.
+
+
+**Travel reservation system**: Developed a Java-based reservation system focused on structured data modeling and system logic. Designed core components using object-oriented principles and UML diagrams with Visual paradigms, implemented key workflows for managing reservations, and validated functionality through unit testing with Junit. The project emphasized clean data structures, reliable application logic, and maintainable code architecture aligned with engineering best practices.
 
 
 ## Professional Experiences
