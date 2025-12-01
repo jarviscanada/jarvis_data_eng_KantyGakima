@@ -6,10 +6,13 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_KantyGakim
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
 summary: >
-  Computer Science graduate from Université de Montréal with  hands-on experience in software development, data processing, and building data-driven tools.
-  Currently working as a Data Engineer at Jarvis, where I design and implement data workflows, automation scripts, and backend components using Python, SQL, Java, Bash, Docker, and Linux-based tooling.
-  I work within an Agile/Scrum environment, collaborating with the team to deliver reliable, well-structured solutions. I have developed a strong foundation in data modelling,
-  pipeline development, and efficient problem-solving. Eager to apply my skills in data engineering, analytics, or related fields while continuing to grow my expertise.
+  Diplômee en Informatique à l'Université de Montréal, je possède une expérience pratique en développement logiciel,
+  analyse de données et conception d?outils orientées données. Actuellement, Ingénieure de données chez Jarvis, je conçois 
+  et mets en place des workflows de données, des scripts d?automatisation et des composants backend en utilisant 
+  Python, SQL, Java, Bash, Docker et divers outils Linux. Je travaille dans un environnement Agile où je collabore 
+  étroitement avec l?équipe pour livrer des solutions fiable, optimisées et facilement maintenables. J?ai développé une
+  bonne maîtrise de la modélisation de données, du développement de pipelines et de l?optimisation des traitements, et 
+  suis intéressée à continuer à approfondir mes compétences dans des rôles en Ingénierie de données ou tout domaine connexe. 
 
 
 # Group your skills by level.
@@ -50,19 +53,22 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
-      Implemented a monitoring system using Bash/Shell scripts and Linux utilities to collect hardware specifications and real-time usage metrics from multiple Linux hosts. 
-      Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous data ingestion using crontab. 
-      The system provides a centralized and reliable data pipeline for performance monitoring, analytics, and maintenance.
+      Impémenté un système de surveuillance de machines Linux, utilisant des scripts Bash/Shell et outils Linux pour 
+      collecter les spécifications matérielles et métriques d'utilisation en temps plusieurs de plusieurs machines Linux.
+      Déployé une base de données PostgreSQL dans un conteneur Docker pour stocker les données collectées et automatisé l'
+      ingestion continue de données via crontab. Le système offre un pipeline de données centralisé et fiable pour la 
+      surveillance de performance, l'analytique et la maintenance.
 
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
   #project name
-  - name: "International Data analysis"
+  - name: "Analyse de données Internationales"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
-      Conducted a data analysis project focused on collecting, cleaning and transforming socio-economic and demographic indicators extracted from multiple Wikipedia data tables,
-      using Python, Pandas, NumPy, Matplotlib and Jupyter Notebook. Applied standard data preprocessing and exploratory analysis methods to identify and visualize patterns across countries.
+      Réalisé un projet d'analyse de données axé sur la collecte, le nettoyage et transformation d'indicateurs socio-économiques
+      et démographiques des pays, extraits  de plusieurs tableaux Wikipedia, en utilisant Python, Pandas, Numpy, Matplotlib et Jupyter Notebook.
+      Appliqué des méthodes et algorithmes standards de traitement et d'analyse afin d'identifier et visualiser des tendances entre pays et régions.
   - name: "Recipe Management Web App"
     git_url: "https://github.com/Kanty-G/Recipe-management-application.git"
     description: >
