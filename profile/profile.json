@@ -35,7 +35,7 @@
   "others": [
     {
       "bullets": [
-        "Scratch programming instructor (2019-2020) for children aged 6 to 12, teaching basic programming concepts through animations and simple games.",
+        "Scratch programming instructor (2019-2020) for children aged 6 to 12, teaching basic programming concepts through animations and games.",
         "Girl Scout: Treasurer (2017-2020) and early teens instructor (2018-2020), organizing weekly educational activities and quarterly community volunteering initiatives."
       ],
       "title": "Community Involvement"
@@ -55,16 +55,16 @@
       "title": "Data Engineer"
     },
     {
-      "company": "Université de Montréal - Philanthropy and Alumni",
-      "description": "Managed, validated, and updated alumni and donor data in compliance with governance and confidentiality standards. Supported outreach campaigns by conducting high-volume outbound calls and analyzing performance results to refine scripts and improve interaction quality. Contributed to onboarding and training by enhancing internal documentation, updating workflows, and providing mentoring to new assistants.",
-      "duration": "2022-Present",
-      "title": "Technical Assistant (Part-time)"
-    },
-    {
       "company": "TD Canada Trust",
       "description": "Handled and documented 70+ daily interactions related to credit card management and account openings while maintaining strict compliance with security and confidentiality standards. Analyzed client profiles to recommend tailored financial products that supported customer satisfaction and an improved user experience. Collaborated with internal teams to resolve incidents and anomalies efficiently, ensuring all cases were clearly, accurately, and traceably documented.",
       "duration": "2024-2025",
       "title": "Bilingual credit card specialist"
+    },
+    {
+      "company": "Université de Montréal - Philanthropy and Alumni",
+      "description": "Managed, validated, and updated alumni and donor data in compliance with governance and confidentiality standards. Supported outreach campaigns by conducting high-volume outbound calls and analyzing performance results to refine scripts and improve interaction quality. Contributed to onboarding and training by enhancing internal documentation, updating workflows, and providing mentoring to new assistants.",
+      "duration": "2022-Present",
+      "title": "Technical Assistant (Part-time)"
     }
   ],
   "skills": {
@@ -73,27 +73,27 @@
       "REACT",
       "JUnit",
       "JavaScript",
-      "Matplotlib",
+      "REST API",
+      "Apache Spark",
       "Data modelling and ETL concepts",
       "Cloud fundamentals (GCP/AWS concepts)"
     ],
     "familiar": [
       "Power BI",
+      "Matplotlib",
       "MongoDB",
-      "REST API",
       "PHP",
-      "C++",
-      "Apache Spark"
+      "C++"
     ],
     "proficient": [
       "Java",
       "Python",
+      "Pandas/Numpy",
       "SQL (PostgreSQL, MySQL)",
       "Linux/Bash",
-      "Pandas/Numpy",
-      "Agile/Scrum",
-      "Git"
+      "Git",
+      "Agile/Scrum"
     ]
   },
-  "summary": "Computer Science graduate from Université de Montréal with  hands-on experience in software development, data processing, and building data-driven tools. Currently working as a Data Engineer at Jarvis, where I design and implement data workflows, automation scripts, and backend components using Python, SQL, Java, Bash, Docker, and Linux-based tooling. I work within an Agile/Scrum environment, collaborating with the team to deliver reliable, well-structured solutions. Through both Jarvis projects and academic work, I have developed a strong foundation in data modelling, pipeline development, and efficient problem-solving. Eager to apply my skills in data engineering, analytics, or related fields while continuing to grow my expertise.\n"
+  "summary": "Computer Science graduate from Université de Montréal with  hands-on experience in software development, data processing, and building data-driven tools. Currently working as a Data Engineer at Jarvis, where I design and implement data workflows, automation scripts, and backend components using Python, SQL, Java, Bash, Docker, and Linux-based tooling. I work within an Agile/Scrum environment, collaborating with the team to deliver reliable, well-structured solutions. I have developed a strong foundation in data modelling, pipeline development, and efficient problem-solving. Eager to apply my skills in data engineering, analytics, or related fields while continuing to grow my expertise.\n"
 }
