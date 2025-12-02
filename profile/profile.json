@@ -3,7 +3,7 @@
     {
       "awards_achievements": [],
       "degree": "**Baccalauréat ès sciences**",
-      "department": "**Informatique** (Cours clés : Algorithmique \u0026 Structures de données, Bases de données, Science des données, Développment Web, Programmation orientée objet, Conception de logiciel, Fondement de l'apprentissage machine, Probabilitées \u0026 statistiques)",
+      "department": "**Informatique** (Cours clés: Algorithmique \u0026 Structures de données, Bases de données, Science des données, Développment Web, Programmation orientée objet, Conception de logiciel, Fondement de l'apprentissage machine, Probabilitées \u0026 statistiques)",
       "duration": "2022-2024",
       "school_name": "Université de Montréal"
     }
@@ -26,7 +26,7 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Implémenté un système de surveillance pour machines Linux à l'aide de scripts Bash/Shell et d?outils Linux afin de collecter les spécifications matérielles et les métriques d'utilisation en temps réel de plusieurs hôtes. Déployé une base de données PostgreSQL conteneurisée avec Docker pour stocker les données collectées, et automatisé l'ingestion continue via crontab. Le système offre un pipeline de données centralisé, fiable et essentiel pour la surveillance des performances, l'analyse et la maintenance.\n",
+      "description": "Implémenté un système de surveillance pour machines Linux à l'aide de scripts Bash/Shell et d'outils Linux afin de collecter les spécifications matérielles et les métriques d'utilisation en temps réel de plusieurs machines Linux. Déployé une base de données PostgreSQL conteneurisée avec Docker pour stocker les données collectées, et automatisé l'ingestion continue via crontab. Le système offre un pipeline de données centralisé, fiable et essentiel pour la surveillance des performances, l'analyse et la maintenance.\n",
       "git_url": "/linux_sql",
       "name": "Agent de surveillance de clusters Linux"
     }
@@ -36,7 +36,7 @@
     {
       "bullets": [
         "Formatrice en programmation Scratch (2019-2020) pour enfants de 6 à 12 ans, afin de les initier aux concepts de base de la programmation à travers des animations et jeux.",
-        "Membre Scout : trésorière d'un groupe de plus de 100 membres (2017-2020) et animatrice pour préadolescents (2018-2020), responsable de l'organisation de leurs activités éducatives hebdomadaires et d'initiatives de bénévolat trimestrielles.",
+        "Membre Scout: trésorière d'un groupe de plus de 100 membres (2017-2020) et animatrice pour préadolescents (2018-2020), responsable de l'organisation de leurs activités éducatives hebdomadaires et d'initiatives de bénévolat trimestrielles.",
         "Passionnée de randonnées"
       ],
       "title": "Community Involvement"
@@ -57,7 +57,7 @@
     },
     {
       "company": "Université de Montréal - Philanthropy and Alumni",
-      "description": "Validé et mis à jour des données des diplômés et donateurs conformément aux règles de gouvernance et de confidentialité. Appuyé les campagnes de sollicitation pour le financement des projets universitaires  via des appels sortants à fort volume et analysé les résultats pour améliorer les scripts, optimiser les processus, et la qualité des interactions. Contribué à l'intégration de nouveaux assistants à travers des écoutes en binômes, des guides optimisés favorisant l'acquisition de nouveaux donateurs.\n",
+      "description": "Validé et mis à jour des données des diplômés et donateurs conformément aux règles de gouvernance et de confidentialité. Appuyé les campagnes de sollicitation pour le financement des projets universitaires  via des appels sortants à fort volume et analysé les résultats pour améliorer les scripts, optimiser les processus et la qualité des interactions. Contribué à l'intégration de nouveaux assistants à travers des écoutes en binômes, des guides optimisés favorisant l'acquisition de nouveaux donateurs.\n",
       "duration": "2022-Présent",
       "title": "Assistante technique (temps partiel)"
     }

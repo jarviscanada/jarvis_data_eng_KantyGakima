@@ -55,7 +55,7 @@ jarvis_projects:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
       Implémenté un système de surveillance pour machines Linux à l'aide de scripts Bash/Shell et d'outils Linux afin de
-      collecter les spécifications matérielles et les métriques d'utilisation en temps réel de plusieurs hôtes.
+      collecter les spécifications matérielles et les métriques d'utilisation en temps réel de plusieurs machines Linux.
       Déployé une base de données PostgreSQL conteneurisée avec Docker pour stocker les données collectées, et automatisé
       l'ingestion continue via crontab. Le système offre un pipeline de données centralisé, fiable et essentiel pour la
       surveillance des performances, l'analyse et la maintenance.
@@ -126,7 +126,7 @@ education:
   - school_name: "Université de Montréal"
     duration: "2022-2024"
     degree: "**Baccalauréat ès sciences**"
-    department: "**Informatique** (Cours clés : Algorithmique & Structures de données, Bases de données, Science des données, Développment Web, Programmation orientée objet,
+    department: "**Informatique** (Cours clés: Algorithmique & Structures de données, Bases de données, Science des données, Développment Web, Programmation orientée objet,
       Conception de logiciel, Fondement de l'apprentissage machine, Probabilitées & statistiques)"
     awards_achievements : []
 
@@ -137,7 +137,7 @@ others:
     bullets:
       - "Formatrice en programmation Scratch (2019-2020) pour enfants de 6 à 12 ans, afin de les initier aux concepts de base de la programmation
        à travers des animations et jeux."
-      - "Membre Scout : trésorière d'un groupe de plus de 100 membres (2017-2020) et animatrice pour préadolescents (2018-2020),
+      - "Membre Scout: trésorière d'un groupe de plus de 100 membres (2017-2020) et animatrice pour préadolescents (2018-2020),
          responsable de l'organisation de leurs activités éducatives hebdomadaires et d'initiatives de bénévolat trimestrielles."
       - "Passionnée de randonnées"
 
