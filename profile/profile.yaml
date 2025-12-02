@@ -6,14 +6,15 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_KantyGakim
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
 summary: >
-  Diplômee en Informatique à l'Université de Montréal, je possède une expérience pratique en développement logiciel,
-  analyse de données et conception d?outils orientées données. Actuellement, Ingénieure de données chez Jarvis, je conçois 
-  et mets en place des workflows de données, des scripts d?automatisation et des composants backend en utilisant 
-  Python, SQL, Java, Bash, Docker et divers outils Linux. Je travaille dans un environnement Agile où je collabore 
-  étroitement avec l?équipe pour livrer des solutions fiable, optimisées et facilement maintenables. J?ai développé une
-  bonne maîtrise de la modélisation de données, du développement de pipelines et de l?optimisation des traitements, et 
-  suis intéressée à continuer à approfondir mes compétences dans des rôles en Ingénierie de données ou tout domaine connexe. 
-
+  Diplômée en informatique à l'Université de Montréal, je possède une expérience pratique en développement logiciel,
+  traitement et analyse de données ainsi qu'en création d'utils orientés données. Actuellement Ingénieure de données
+  chez Jarvis, je conçois et implémente des workflows de données, des scripts d'automatisation et des composants backend
+  en utilisant Python, SQL, Java, Bash/Shell, Docker et divers outils Linux. Je collabore au sein d'une équipe Agile pour livrer
+  des solutions fiables, performantes et facilement maintenables. Mon parcours m'a permis de développer une solide base
+  en modélisation de données, développement de pipelines et résolution efficace de problèmes techniques. Je suis motivée
+  à appliquer mes compétences en ingénierie et analyse de données, ou tout domaine connexe, tout en continuant de développer
+  mon expertise.
+ 
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -34,7 +35,7 @@ skills:
     - JUnit
     - JavaScript
     - REST API
-    - Apache Spark
+    - Spark
     - Data modelling and ETL concepts
     - Cloud fundamentals (GCP/AWS concepts)
   # At least 5 skills
@@ -48,16 +49,16 @@ skills:
 
 # List of Jarvis projects
 jarvis_projects:
-  - name: "Linux Cluster Resource Monitoring App"
+  - name: "Agent de surveillance de clusters Linux"
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
-      Impémenté un système de surveuillance de machines Linux, utilisant des scripts Bash/Shell et outils Linux pour 
-      collecter les spécifications matérielles et métriques d'utilisation en temps plusieurs de plusieurs machines Linux.
-      Déployé une base de données PostgreSQL dans un conteneur Docker pour stocker les données collectées et automatisé l'
-      ingestion continue de données via crontab. Le système offre un pipeline de données centralisé et fiable pour la 
-      surveillance de performance, l'analytique et la maintenance.
+      Implémenté un système de surveillance pour machines Linux à l'aide de scripts Bash/Shell et d?outils Linux afin de
+      collecter les spécifications matérielles et les métriques d?utilisation en temps réel de plusieurs hôtes.
+      Déployé une base de données PostgreSQL conteneurisée avec Docker pour stocker les données collectées, et automatisé
+      l'ingestion continue via crontab. Le système offre un pipeline de données centralisé, fiable et essentiel pour la
+      surveillance des performances, l'analyse et la maintenance.
 
 # List of personal or academic projects
 # Feel free to add more projects
@@ -66,43 +67,57 @@ highlighted_projects:
   - name: "Analyse de données Internationales"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
-      Réalisé un projet d'analyse de données axé sur la collecte, le nettoyage et transformation d'indicateurs socio-économiques
-      et démographiques des pays, extraits  de plusieurs tableaux Wikipedia, en utilisant Python, Pandas, Numpy, Matplotlib et Jupyter Notebook.
-      Appliqué des méthodes et algorithmes standards de traitement et d'analyse afin d'identifier et visualiser des tendances entre pays et régions.
-  - name: "Recipe Management Web App"
+      Réalisé un projet d'analyse de données portant sur la collecte, le nettoyage et la transformation d'indicateurs
+      socio-économiques et démographiques extraits de plusieurs tableaux Wikipedia, en utilisant Python, Pandas, Numpy, 
+      Matplotlib et Jupyter Notebook. Appliqué des méthodes et algorithmes standards de traitement et d'analyse afin d'identifier
+      et visualiser des tendances entre pays et régions.
+
+  - name: "Application web de gestion de recettes"
     git_url: "https://github.com/Kanty-G/Recipe-management-application.git"
     description: >
-      Developed a full-stack web application that helps users store all their favourite recipes in one place and keep them easily accessible.
-      The app allows any user to add, edit, and delete their own recipes, with updates appearing in real time for everyone. Built using PHP, MySQL, JavaScript,
-      HTML, CSS, and supported by a simple REST API with asynchronous fetch requests to handle all CRUD operations and keep the interface in sync.rt CRUD operations
-      and instant synchronization.
+      Développé une application web full-stack permettant aux utilisateurs d'enregistrer, partager, consulter et organiser
+      leurs recettes au même endroit. L'application permet d'ajouter, modifier et supprimer des recettes avec mise à jour
+      en temps réel. Implémenté avec PHP, MySQL, JavaScript, HTML, CSS, elle s'appuie sur une API REST et des requêtes asynchrones
+      pour assurer la synchronisation fluide de l?interface.
 
-  - name: "Travel reservation system"
+  - name: "Système de réservation de  voyages"
     description: >
-      Developed a Java-based reservation system centered on structured data modelling and system logic. Designed core components using object-oriented principles and UML diagrams in Visual Paradigm,
-      implemented reservation workflows, and validated functionality with JUnit tests. The project focused on clean data structures, reliable application logic, and maintainable code aligned with software engineering best practices.
+      Développé un système de réservation en Java centré sur la modélisation des données relationnelles. Conçu les composants
+      principaux selon les principes de la programmation orientée objet et des diagrammes UML dans Visual Paradigm, implémenté 
+      les workflows de réservation et validé les fonctionnalités avec des tests JUnit. Le projet met l'accent sur des structures de données 
+      claires, une logique fiable et un code maintenable conforme aux bonnes pratiques d'ingénierie logicielle.
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
-  - title: "Data Engineer"
+  - title: "Ingénieure de données"
     company: "Jarvis"
-    duration: "2025-present"
+    duration: "2025-présent"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Designed and developed data workflows and backend components using SQL, Python, Java, Bash, and Linux-based tooling. Implemented automation scripts and containerized environments with Docker. Collaborated within an Agile team using Git to deliver maintainable and well-structured solutions."
+    description: >
+      Conçu et développé des workflows de donnés, composants backend et outils d'automatisation avec Python, Java, SQL, Bash outils Linux
+      et Docker. Collaboré dans une équipe Agile pour livrer des solutions robustes, bien structuées et maintenables.
 
-  - title: "Bilingual credit card specialist"
+
+  - title: "Spécialiste téléphonique bilingue en carte de crédit"
     company: "TD Canada Trust"
     duration: "2024-2025"
-    description: "Handled and documented 70+ daily interactions related to credit card management and account openings while maintaining strict compliance with security and confidentiality standards. Analyzed client profiles to recommend tailored financial products that supported customer satisfaction and an improved user experience. Collaborated with internal teams to resolve incidents and anomalies efficiently, ensuring all cases were clearly, accurately, and traceably documented."
+    description: >
+      Géré et documenté plus de 70 interactions quotidiennes liées à la gestion des cartes de crédit et aux ouvertures de compte,
+      tout en respectant les normes strictes de sécurité et de confidentialité. Analysé les profils clients afin de recommander des
+      produits financiers adaptés, améliorant la satisfaction et l'expérience utilisateur. Collaboré avec des équipes internes pour
+      résoudre les incidents et anomalies, en assurant une documentation précise, claire et traçable.
 
-  - title: "Technical Assistant (Part-time)"
+  - title: "Assistante technique (temps partiel)"
     company: "Université de Montréal - Philanthropy and Alumni"
-    duration: "2022-Present"
-    description: "Managed, validated, and updated alumni and donor data in compliance with governance and confidentiality standards. Supported outreach campaigns by conducting high-volume outbound calls and analyzing performance results to refine scripts and improve interaction quality. Contributed to onboarding and training by enhancing internal documentation, updating workflows, and providing mentoring to new assistants."
-
+    duration: "2022-Présent"
+    description: >
+      Géré, validé et mis à jour des données des diplômés et donateurs conformément aux règles de gouvernance et de confidentialité.
+      Appuyé les campagnes de sollicitation pour le financement des projets universitaires  via des appels sortants à fort volume et
+      analysé les résultats pour améliorer les scripts et optimiser la qualité des interactions. Contribué à l'intégration de nouveaux
+      assistants à travers des écoutes en binômes, des guides optimisés favorisant l'acquisition de nouveaux donateurs.
 
 
 
@@ -110,9 +125,9 @@ professional_experience:
 education:
   - school_name: "Université de Montréal"
     duration: "2022-2024"
-    degree: "**Bachelor of Science**"
-    department: "**Computer Science** (Relevant coursework : Algorithms & Data Structures, Databases, Data Science, Web Development, Object-Oriented Programming,
-      Software Design, Machine Learning, Probability & Statistics)"
+    degree: "**Baccalauréat ès sciences**"
+    department: "**Informatique** (Cours clés : Algorithmique & Structures de données, Bases de données, Science des données, Développment Web, Programmation orientée objet,
+      Conception de logiciel, Fondement de l'apprentissage machine, Probabilitées $ statistiques)"
     awards_achievements : []
 
 
@@ -120,13 +135,10 @@ education:
 others:
   - title: "Community Involvement"
     bullets:
-      - "Scratch programming instructor (2019-2020) for children aged 6 to 12, teaching basic programming concepts through animations and games."
-      - "Girl Scout: Treasurer (2017-2020) and early teens instructor (2018-2020), organizing weekly educational activities and quarterly community volunteering initiatives."
-
-  - title: "Hobbies"
-    bullets:
-      - "Hiking enthusiast"
-
+      - "Formatrice en programmation Scratch (2019-2020) pour enfants de 6 à 12 ans, afin de les initier aux concepts de base de la programmation
+       à travers des animations et jeux."
+      - "Membre Scout : trésorière d'un groupe de plus de 100 membres (2017-2020) et animatrice pour préadolescents (2018-2020),
+         responsable de l'organisation de leurs activités éducatives hebdomadaires et d'initiatives de bénévolat trimestrielles."
 
 
 
