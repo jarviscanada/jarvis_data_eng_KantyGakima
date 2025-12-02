@@ -45,7 +45,7 @@ skills:
 
 # List of Jarvis projects
 jarvis_projects:
-  - name: "Linux Cluster Resource Monitoring App"
+  - name: "Linux Cluster Monitoring Agent"
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)

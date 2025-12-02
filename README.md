@@ -16,7 +16,7 @@ Computer Science graduate from Université de Montréal with  hands-on experienc
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git)
 
 
-**Linux Cluster Resource Monitoring App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git/tree/master/linux_sql)]: Implemented a monitoring system using Bash/Shell scripts and Linux utilities to collect hardware specifications and real-time usage metrics from multiple Linux hosts.  Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous data ingestion using crontab.  The system provides a centralized and reliable data pipeline for performance monitoring, analytics, and maintenance.
+**Linux Cluster Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git/tree/master/linux_sql)]: Implemented a monitoring system using Bash/Shell scripts and Linux utilities to collect hardware specifications and real-time usage metrics from multiple Linux hosts.  Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous data ingestion using crontab.  The system provides a centralized and reliable data pipeline for performance monitoring, analytics, and maintenance.
 
 
 
