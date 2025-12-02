@@ -14,7 +14,7 @@ summary: >
   en modélisation de données, développement de pipelines et résolution efficace de problèmes techniques. Je suis motivée
   à appliquer mes compétences en ingénierie et analyse de données, ou tout domaine connexe, tout en continuant de développer
   mon expertise.
- 
+
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -55,7 +55,7 @@ jarvis_projects:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
       Implémenté un système de surveillance pour machines Linux à l'aide de scripts Bash/Shell et d?outils Linux afin de
-      collecter les spécifications matérielles et les métriques d?utilisation en temps réel de plusieurs hôtes.
+      collecter les spécifications matérielles et les métriques d'utilisation en temps réel de plusieurs hôtes.
       Déployé une base de données PostgreSQL conteneurisée avec Docker pour stocker les données collectées, et automatisé
       l'ingestion continue via crontab. Le système offre un pipeline de données centralisé, fiable et essentiel pour la
       surveillance des performances, l'analyse et la maintenance.
@@ -77,8 +77,8 @@ highlighted_projects:
     description: >
       Développé une application web full-stack permettant aux utilisateurs d'enregistrer, partager, consulter et organiser
       leurs recettes au même endroit. L'application permet d'ajouter, modifier et supprimer des recettes avec mise à jour
-      en temps réel. Implémenté avec PHP, MySQL, JavaScript, HTML, CSS, elle s'appuie sur une API REST et des requêtes asynchrones
-      pour assurer la synchronisation fluide de l?interface.
+      en temps réel. Implémentée avec PHP, MySQL, JavaScript, HTML, CSS, elle s'appuie sur une API REST et des requêtes asynchrones
+      pour assurer la synchronisation fluide de l'interface.
 
   - name: "Système de réservation de  voyages"
     description: >
@@ -98,7 +98,7 @@ professional_experience:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
       Conçu et développé des workflows de donnés, composants backend et outils d'automatisation avec Python, Java, SQL, Bash outils Linux
-      et Docker. Collaboré dans une équipe Agile pour livrer des solutions robustes, bien structuées et maintenables.
+      et Docker. Collaboré dans une équipe Agile pour livrer des solutions robustes, bien structurées et maintenables.
 
 
   - title: "Spécialiste téléphonique bilingue en carte de crédit"
@@ -139,6 +139,7 @@ others:
        à travers des animations et jeux."
       - "Membre Scout : trésorière d'un groupe de plus de 100 membres (2017-2020) et animatrice pour préadolescents (2018-2020),
          responsable de l'organisation de leurs activités éducatives hebdomadaires et d'initiatives de bénévolat trimestrielles."
+      - "Passionnée de randonnée"
 
 
 
