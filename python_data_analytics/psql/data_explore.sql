@@ -17,13 +17,13 @@ select max(invoice_date), min(invoice_date ) from retail;
 --Q5:number of SKU/merchants (e.g unique stock code)
 select count(DISTINCT stock_code) from retail;
 
---Q6: Calculate average invoice amount excluding invoices with a negative amount (e.g. canceled orders have negative amount)  # to do
+--Q6: Calculate average invoice amount excluding invoices with a negative amount (e.g. canceled orders have negative amount)
 select AVG(invoice_amount)
 from (
 		select invoice_no, SUM(quantity * unit_price) as invoice_amount
 			from retail
 			group by invoice_no
-			having SUM(quantity * unit_price) >= 0
+			having SUM(quantity * unit_price) > 0
 	) r;
 
 --Q7: Calculate total revenue
