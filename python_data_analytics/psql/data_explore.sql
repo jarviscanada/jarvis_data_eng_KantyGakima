@@ -8,33 +8,32 @@ SELECT * FROM retail limit 10;
 SELECT COUNT(*) FROM retail;
 
 --Q3: Number of clients(unique customer_id)
-select count(DISTINCT customer_id) from retail;
-
+SELECT count(DISTINCT customer_id) FROM retail;
 
 --Q4:invoice date range
-select max(invoice_date), min(invoice_date ) from retail;
+SELECT max(invoice_date), min(invoice_date ) FROM retail;
 
 --Q5:number of SKU/merchants (e.g unique stock code)
-select count(DISTINCT stock_code) from retail;
+SELECT count(DISTINCT stock_code) FROM retail;
 
 --Q6: Calculate average invoice amount excluding invoices with a negative amount (e.g. canceled orders have negative amount)
-select AVG(invoice_amount)
-from (
-		select invoice_no, SUM(quantity * unit_price) as invoice_amount
-			from retail
-			group by invoice_no
-			having SUM(quantity * unit_price) > 0
+SELECT AVG(invoice_amount)
+FROM (
+		SELECT invoice_no, SUM(quantity * unit_price) AS invoice_amount
+		FROM retail
+			GROUP BY invoice_no
+			HAVING SUM(quantity * unit_price) > 0
 	) r;
 
 --Q7: Calculate total revenue
-select sum(unit_price * quantity) from retail;
+SELECT sum(unit_price * quantity) FROM retail;
 
 --Q8: Calculate total revenue by YYYYMM
-select (cast(extract(year from invoice_date) as integer) * 100 +
-			cast(extract (month from invoice_date) as integer)) as yyyymm,
+SELECT (cast(extract(year from invoice_date) as integer) * 100 +
+			cast(extract (month from invoice_date) as integer)) AS yyyymm,
 		sum(unit_price * quantity)
-		from retail
-		group by yyyymm
-		order by yyyymm;
+		FROM retail
+		GROUP BY yyyymm
+		ORDER BY yyyymm;
 
 
