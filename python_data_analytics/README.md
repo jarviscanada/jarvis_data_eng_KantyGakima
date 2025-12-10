@@ -4,14 +4,14 @@ a large base of wholesalers. Although the company has operated online for over a
 To address this, the LGS marketing team wants to leverage data-driven insights to better understand customer purchasing
 behaviour and design more effective marketing strategies.
 
-LGS partnered with Jarvis Consulting to build a proof-of-concept (PoC) analytics solution. As a Data Engineer on the
+LGS partnered with Jarvis Consulting to build a proof of concept (PoC) analytics solution. As a Data Engineer on the
 Jarvis team, my role is to analyze historical transactional data to extract patterns that can help LGS increase revenue,
 retain existing customers, and target new segments more effectively. Insights from this analysis,such as seasonality,
 product performance, customer segmentation, and cancellation patterns, will guide LGS in creating targeted campaigns, 
 optimizing inventory, and improving overall operational decisions.
 
-This PoC was implemented using Python and its libraries such as Pandas, Numpy,matplotlib; and Jupyter Notebook.Focusing on data wrangling,
-descriptive data analysis, and generating business-driven insights.
+This PoC was implemented using **Python** with **Pandas**, **NumPy**, and **Matplotlib** in a **Jupyter Notebook**, focusing on data wrangling, 
+exploratory analysis and visualization to generate business-driven insights.
 # Implementaion
 ## Project Architecture
 The PoC architecture follows a simple, cloud-inspired pipeline adapted to the constraints of the project.
