@@ -11,7 +11,7 @@ product performance, customer segmentation, and cancellation patterns, will guid
 optimizing inventory, and improving overall operational decisions.
 
 This PoC was implemented using Python and its libraries such as Pandas, Numpy, and Jupyter Notebook.Focusing on data wrangling,
-exploratory data analysis, and generating business-driven insights.
+descriptive data analysis, and generating business-driven insights.
 # Implementaion
 ## Project Architecture
 The PoC architecture follows a simple, cloud-inspired pipeline adapted to the constraints of the project.
@@ -32,25 +32,17 @@ The architecture consists of:
    - cancellation analysis
    - etc
    
-5. **Deployment (Notebook+Github): # Introduction
+5. **Deployment (Notebook+Github):** 
    London Gift Shop (LGS) is a UK-based online retailer specializing in giftware, serving both individual customers and
    a large base of wholesalers. Although the company has operated online for over a decade, its revenue hasn't been growing.
    To address this, the LGS marketing team wants to leverage data-driven insights to better understand customer purchasing
    behaviour and design more effective marketing strategies.
 
-LGS partnered with Jarvis Consulting to build a proof-of-concept (PoC) analytics solution. As a Data Engineer on the
-Jarvis team, my role is to analyze historical transactional data to extract patterns that can help LGS increase revenue,
-retain existing customers, and target new segments more effectively. Insights from this analysis,such as seasonality,
-product performance, customer segmentation, and cancellation patterns, will guide LGS in creating targeted campaigns,
-optimizing inventory, and improving overall operational decisions.
-
-This PoC was implemented using Python and its libraries such as Pandas, Numpy, and Jupyter Notebook.Focusing on data wrangling,
-exploratory data analysis, and generating business-driven insights.
 # Implementaion
 ## Project Architecture
 The PoC architecture follows a simple, cloud-inspired pipeline adapted to the constraints of the project.
 Since the Jarvis team cannot operate in LGS's Azure environment, the IT team exported two years of historical transactional
-data as a SQL dump. This dataset acts as the source for all further processing.
+data as a SQL file. This dataset acts as the source for all further processing.
 
 The architecture consists of:
 1. **Data Source (LGS online store):** LGS web application continuously stores order, product, pricing, and customer
