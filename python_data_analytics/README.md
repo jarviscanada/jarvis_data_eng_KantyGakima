@@ -10,7 +10,7 @@ retain existing customers, and target new segments more effectively. Insights fr
 product performance, customer segmentation, and cancellation patterns, will guide LGS in creating targeted campaigns, 
 optimizing inventory, and improving overall operational decisions.
 
-This PoC was implemented using Python and its libraries such as Pandas, Numpy, and Jupyter Notebook.Focusing on data wrangling,
+This PoC was implemented using Python and its libraries such as Pandas, Numpy,matplotlib; and Jupyter Notebook.Focusing on data wrangling,
 descriptive data analysis, and generating business-driven insights.
 # Implementaion
 ## Project Architecture
@@ -30,7 +30,7 @@ The architecture consists of:
    - seasonal trends
    - new vs existing customers activity
    - cancellation analysis
-   - etc
+   - etc.
    
 5. **Deployment (Notebook+Github):** 
    London Gift Shop (LGS) is a UK-based online retailer specializing in giftware, serving both individual customers and
@@ -50,8 +50,7 @@ The architecture consists of:
 2. **Data Export(SQL File):** To support this PoC, the LGS IT team provided an anonymized SQL export (retail.sql)
    containing all transactions between December 2009 and December 2011.
 3. **Local PostgreSQL Database (Docker):** The SQL file is ingested into a PostgreSQL instance running locally via Docker.
-4. **Data Wrangling & Analytics (Python / Jupyter Notebook):** Using python libraries such as Pandas and Numpy, the
-   data is cleaned, transformed, and analyzed to answer business questions such as
+4. **Data Wrangling & Analytics (Python / Jupyter Notebook):** Using python libraries such as Pandas, Numpy and Matplotlib. The data is cleaned, transformed, and analyzed to answer business questions such as
     - Customer purchasing behavior
     - seasonal trends
     - new vs existing customers activity
