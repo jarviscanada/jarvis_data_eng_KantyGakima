@@ -62,7 +62,8 @@ The architecture consists of:
 including visualizations and business recommendations.
 
 ### Architecture Diagram
-- Architecture diagram
+![Architecture Diagram](./Assets/architecture_diagram.jpeg)
+
 
 ## Data Analytics and Wrangling
 -  link to the Jupyter notebook: https://github.com/jarviscanada/jarvis_data_eng_KantyGakima/blob/feature/data_analytics/python_data_analytics/retail_data_analytics_wrangling.ipynb
@@ -110,4 +111,11 @@ Below are key segments, their meaning and how they can use for marketing strateg
    strategies such as loyalty rewards, exclusive previews, and personalized recommendations ensuring continued engagement and satisfaction.
 
 # Improvements
-- List three improvements that you want to do if you got more time
+- **Enhance data cleaning and validation:** In the current project, I verify data types and detect invalid records manually,
+    which is time-consuming and does not guarantee full data integrity. A future improvement would be to automate these checks 
+    using a script or reusable function that flags anomalies and quality issues before the analysis begins.
+- **Expand the analysis to include product-level insights:** The existing analysis is primarily focused on customer behaviour.
+    to provide a more complete view of revenue drivers, I would add product-level exploration and visualizations?such as top-selling items,
+    underperforming products, seasonal product trends, and SKU-level cancellations.
+- **Automate RFM segmentation:** Since RFM segmentation can be reused across different datasets and businesses, 
+    a valuable improvement would be to build a reusable Python class or function that automatically computes RFM metrics, scores, and segment labels.
