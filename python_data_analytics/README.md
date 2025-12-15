@@ -92,7 +92,7 @@ Below are key segments, their meaning and how they can be used for marketing str
 
     - Recency: ~5,434
     - Frequency: ~17
-    - Monetary: ~£5,726 \
+    - Monetary: ~£5,726 
 
    These customers were previously very active and high-spending but have not purchased in a long time. They are
 
