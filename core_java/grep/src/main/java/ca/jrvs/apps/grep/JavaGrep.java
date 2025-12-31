@@ -13,8 +13,8 @@ public interface JavaGrep {
     void process() throws IOException;
 
     /**
-     * Traverse a given directory and return all files
-     * @param rootDir input directiry
+     * Traverse a given directory recursively and return all files
+     * @param rootDir input directory
      * @return files under the rootDir
      */
     List<File> listFiles(String rootDir);
@@ -26,7 +26,7 @@ public interface JavaGrep {
      * @return lines
      * @throws IllegalArgumentException if a given inputFile is not a file
      */
-    List<String> readLines (File inputFile);
+    List<String> readLines (File inputFile) throws IOException;
 
     /**
      * Check if a line contains the regex pattern (passed by user)
