@@ -54,7 +54,7 @@ public class LambdaStreamExcImp implements  LambdaStreamExc{
 
     @Override
     public IntStream getOdd(IntStream intStream) {
-        return intStream.filter(i -> i %2 == 0);
+        return intStream.filter(i -> i %2 != 0);
     }
 
     @Override
