@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 
 public class JavaGrepImp implements JavaGrep{
 
-    final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
+    final Logger logger = LoggerFactory.getLogger(JavaGrepImp.class);
 
     private String regex;
     private String rootPath;
@@ -166,7 +166,6 @@ public class JavaGrepImp implements JavaGrep{
         if(args.length != 3) {
             throw new IllegalArgumentException("USAGE: JavaGrepImp regex rootpath outFile");
         }
-        BasicConfigurator.configure();
 
         JavaGrepImp javaGrepImp = new JavaGrepImp();
 
