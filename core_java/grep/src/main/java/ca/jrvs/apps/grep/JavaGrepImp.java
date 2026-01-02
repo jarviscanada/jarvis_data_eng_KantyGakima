@@ -167,8 +167,10 @@ public class JavaGrepImp implements JavaGrep{
             throw new IllegalArgumentException("USAGE: JavaGrepImp regex rootpath outFile");
         }
 
-        JavaGrepImp javaGrepImp = new JavaGrepImp();
+        //use default logger config
+        BasicConfigurator.configure();
 
+        JavaGrepImp javaGrepImp = new JavaGrepImp();
         javaGrepImp.setRegex(args[0]);
         javaGrepImp.setRootPath(args[1]);
         javaGrepImp.setOutFile(args[2]);
