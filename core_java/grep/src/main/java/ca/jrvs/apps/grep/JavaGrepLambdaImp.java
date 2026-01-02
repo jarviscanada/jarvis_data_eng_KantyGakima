@@ -5,7 +5,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -31,6 +33,31 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
 
     /**
      *
+     * @throws IOException
+     */
+    @Override
+    public void process() throws IOException {
+        logger.info("Starting process. regex={}, rootPath={}, outFile={}",
+                getRegex(), getRootPath(), getOutFile());
+        //compile regex
+        this.pattern = Pattern.compile(getRegex());
+        List<String> matchedLines =
+                listFiles(getRootPath()).stream()
+                        .flatMap(file -> {
+                            try {
+                                return readLines(file).stream();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        })
+                        .filter(line -> containsPattern(line))
+                        .collect(Collectors.toList());
+        writeToFile(matchedLines);
+        logger.info("Process completed. Matched {} lines.", matchedLines.size());
+    }
+
+    /**
+     *
      * @param inputFile
      * @return lines as a list
      */
@@ -44,6 +71,11 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
         }
     }
 
+    /**
+     *
+     * @param rootDir input directory
+     * @return files under rootDir
+     */
 
     @Override
     public List<File> listFiles(String rootDir) {

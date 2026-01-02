@@ -21,7 +21,7 @@ public class JavaGrepImp implements JavaGrep{
     private String regex;
     private String rootPath;
     private String outFile;
-    private Pattern pattern;
+    Pattern pattern;
 
     @Override
     public void process() throws IOException {
