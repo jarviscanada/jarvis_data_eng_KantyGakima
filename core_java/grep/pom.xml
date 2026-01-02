@@ -25,19 +25,28 @@
 
   <build>
     <plugins>
-      <!-- normal manifest -->
       <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <!-- Run shade goal on package phase -->
+          <execution>
+            <configuration>
+              <transformers>
+                <!-- add Main-Class to manifest file -->
+                <transformer
+                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>ca.jrvs.apps.grep.JavaGrepImp</mainClass>
+                </transformer>
+              </transformers>
+            </configuration>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <phase>package</phase>
+          </execution>
+        </executions>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.2</version>
-        <configuration>
-          <archive>
-            <manifest>
-              <!-- main class -->
-              <mainClass>ca.jrvs.apps.grep.JavaGrepImp</mainClass>
-            </manifest>
-          </archive>
-        </configuration>
+        <version>2.3</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
