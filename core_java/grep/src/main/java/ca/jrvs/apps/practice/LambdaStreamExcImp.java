@@ -9,7 +9,7 @@ import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class LambdaStreamExcImp implements  LambdaStreamExc{
+public class LambdaStreamExcImp implements  LambdaStreamExc {
 
 
     @Override
@@ -54,7 +54,7 @@ public class LambdaStreamExcImp implements  LambdaStreamExc{
 
     @Override
     public IntStream getOdd(IntStream intStream) {
-        return intStream.filter(i -> i %2 != 0);
+        return intStream.filter(i -> i % 2 != 0);
     }
 
     @Override
@@ -80,48 +80,4 @@ public class LambdaStreamExcImp implements  LambdaStreamExc{
                 .map(i -> i * i);
     }
 
-    public static void main(String[] args) {
-        LambdaStreamExcImp lse = new LambdaStreamExcImp();
-
-        //Test toUpperCase
-        System.out.println("---toUpperCase---");
-        lse.toUpperCase("hello", "world").forEach(System.out::println);
-
-        //Test filter
-        System.out.println("---filter:remove strings containing 'a'---");
-        lse.filter(lse.createStrStream("cat", "dog", "pan"), "a")
-                .forEach(System.out::println);
-
-        //Test createIntStream + toList
-        System.out.println("---createIntStream(0,5)---");
-        List <Integer> nums = lse.toList(lse.createIntStream(1, 5));
-        System.out.println(nums);
-
-        //Test squareRootIntStream
-        System.out.println("---sqrt of 1 to 5--- ");
-        lse.squareRootIntStream(lse.createIntStream(1, 5))
-                .forEach(System.out::println);
-
-        //Test getOdd
-        System.out.println("---get odd numbers from 1 to 10");
-        lse.getOdd(lse.createIntStream(1, 10))
-                .forEach(System.out::println);
-
-        //Test getLambdaPrinter + printMessages
-        System.out.println("--- print messages---");
-        String[] messages = {"a", "b", "c"};
-        lse.printMessages(messages, lse.getLambdaPrinter("msg", "!"));
-
-        //Test PrintOdd
-        System.out.println("---print odd numbers from 1 to 10--- ");
-        lse.printOdd(lse.createIntStream(1, 10), lse.getLambdaPrinter("odd number:", "!") );
-
-        //Test flatNestedInt
-        System.out.println("---flatNestedInt--- ");
-        List<Integer> list1 = Arrays.asList(0,1);
-        List<Integer> list2 = Arrays.asList(2,3);
-        lse.flatNestedInt(Stream.of(list1, list2))
-                .forEach(System.out::println);
-
-    }
 }

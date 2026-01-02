@@ -164,9 +164,8 @@ public class JavaGrepImp implements JavaGrep{
 
     public static void main(String[] args) {
         if(args.length != 3) {
-            throw new IllegalArgumentException("USAGE: JavaGrep regex rootpath outFile");
+            throw new IllegalArgumentException("USAGE: JavaGrepImp regex rootpath outFile");
         }
-
         BasicConfigurator.configure();
 
         JavaGrepImp javaGrepImp = new JavaGrepImp();
