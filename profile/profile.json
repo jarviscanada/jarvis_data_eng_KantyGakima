@@ -8,27 +8,37 @@
       "school_name": "Université de Montréal"
     }
   ],
-  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git",
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_KantyGakima",
   "highlighted_projects": [
     {
-      "description": "Réalisé un projet d'analyse de données portant sur la collecte, le nettoyage et la transformation d'indicateurs socio-économiques et démographiques extraits de plusieurs tableaux Wikipedia, en utilisant Python, Pandas, Numpy,  Matplotlib et Jupyter Notebook. Appliqué des méthodes et algorithmes standards de traitement et d'analyse afin d'identifier et visualiser des tendances entre pays et régions.\n",
+      "description": "Réalisé un projet d’analyse visant à collecter, nettoyer et transformer des indicateurs socio-économiques et démographiques provenant de tableaux Wikipedia, à l’aide de Python, Pandas, NumPy, Matplotlib et Jupyter Notebook. Appliqué des méthodes et algorithmes standards de traitement et d'analyse afin d'identifier et visualiser des tendances entre pays et régions.\n",
       "name": "Analyse de données Internationales"
     },
     {
-      "description": "Développé une application web full-stack permettant aux utilisateurs d'enregistrer, partager, consulter et organiser leurs recettes au même endroit. L'application permet d'ajouter, modifier et supprimer des recettes avec mise à jour en temps réel. Implémentée avec PHP, MySQL, JavaScript, HTML, CSS, elle s'appuie sur une API REST et des requêtes asynchrones pour assurer la synchronisation fluide de l'interface.\n",
+      "description": "Développé une application web full-stack permettant aux utilisateurs d’ajouter, modifier, supprimer, patrager et consulter leurs recettes au même endroit. Assuré une expérience fluide grâce à une API REST et des requêtes asynchrones, avec une pile technologique composée de PHP, MySQL, JavaScript, HTML et CSS.\n",
       "git_url": "https://github.com/Kanty-G/Recipe-management-application.git",
       "name": "Application web de gestion de recettes"
     },
     {
-      "description": "Développé un système de réservation en Java centré sur la modélisation des données relationnelles. Conçu les composants principaux selon les principes de la programmation orientée objet et des diagrammes UML dans Visual Paradigm, implémenté  les workflows de réservation et validé les fonctionnalités avec des tests JUnit. Le projet met l'accent sur des structures de données  claires, une logique fiable et un code maintenable conforme aux bonnes pratiques d'ingénierie logicielle.\n",
+      "description": "Conçu un système de réservation en Java centré sur une modélisation des données relationnelles. Structuré les composants principaux selon les principes de la programmation orientée objet et des diagrammes UML dans Visual Paradigm, implémenté  les workflows de réservation et validé les fonctionnalités avec des tests JUnit afin d'assurer fiabilité et maintenabilité.\n",
       "name": "Système de réservation de  voyages"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Implémenté un système de surveillance pour machines Linux à l'aide de scripts Bash/Shell et d'outils Linux afin de collecter les spécifications matérielles et les métriques d'utilisation en temps réel de plusieurs machines Linux. Déployé une base de données PostgreSQL conteneurisée avec Docker pour stocker les données collectées, et automatisé l'ingestion continue via crontab. Le système offre un pipeline de données centralisé, fiable et essentiel pour la surveillance des performances, l'analyse et la maintenance.\n",
+      "description": "Implémenté un système de surveillance pour machines Linux à l'aide de scripts Bash/Shell et d'outils Linux afin de collecter les spécifications matérielles et les métriques d'utilisation en temps réel. Déployé une base de données PostgreSQL conteneurisée avec Docker pour stocker les données collectées, et automatisé l'ingestion continue via crontab. Le système offre un pipeline de données centralisé, fiable et essentiel pour la surveillance des performances, l'analyse et la maintenance.\n",
       "git_url": "/linux_sql",
       "name": "Agent de surveillance de clusters Linux"
+    },
+    {
+      "description": "Réalisé un projet d'analyse de données d'un magasin en ligne pour mieux comprendre le comportement d'achat de sa clientèle et augmenter ses revenus. Chargé les données historiques SQL exportés dans une base de données PostgreSQL conteneurisée avec Docker, effectué le nettoyage et l'analyse des données avec Python, Pandas, NumPy, et Matplotlib  dans Jupyter Notebook. Produit des analyses sur les tendances saisonnières, la rétention client, les annulations de commandes, la répartition géographique et la segmentation RFM, menant à des recommandations marketing ciblées.\n",
+      "git_url": "/python_data_analytics",
+      "name": "Analyse de données clients et ventes - London Gift Shop (PoC)"
+    },
+    {
+      "description": "Développé un outil en Java permettant de rechercher récursivement les lignes correspondant à une  expression régulière dans un répertoire donné, et écrire les résultats dans un ficher de sortie, similaire au  comportement de `egrep -r`. Implémenté la navigation des fichiers, la gestion des expressions régulières (regex) et les opérations d'E/S performantes ave des streams et lambdas en Java. Déployé l'application sous forme  de JAR executable et d'image Docker pour assurer la portabilité.\n\n  \n",
+      "git_url": "/core-java/grep",
+      "name": "Application Grep en Java"
     }
   ],
   "name": "Kanty Gakima",
@@ -45,7 +55,7 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Conçu et développé des workflows de donnés, composants backend et outils d'automatisation avec Python, Java, SQL, Bash outils Linux et Docker. Collaboré dans une équipe Agile pour livrer des solutions robustes, bien structurées et maintenables.\n",
+      "description": "Conçu et développé des workflows de données et des composants backend en utilisant Python, SQL, Java, Bash et divers outils Linux. Mis en place des scripts d’automatisation et des environnements conteneurisés avec Docker afin d’optimiser les processus et la fiabilité des pipelines. Collaboré au sein d’une équipe Agile pour livrer des solutions robustes, bien structurées et facilement maintenables.\n",
       "duration": "2025-présent",
       "title": "Ingénieure de données"
     },
@@ -56,7 +66,7 @@
       "title": "Spécialiste téléphonique bilingue en carte de crédit"
     },
     {
-      "company": "Université de Montréal - Philanthropy and Alumni",
+      "company": "Université de Montréal - Philathropie et Diplômés",
       "description": "Validé et mis à jour des données des diplômés et donateurs conformément aux règles de gouvernance et de confidentialité. Appuyé les campagnes de sollicitation pour le financement des projets universitaires  via des appels sortants à fort volume et analysé les résultats pour améliorer les scripts, optimiser les processus et la qualité des interactions. Contribué à l'intégration de nouveaux assistants à travers des écoutes en binômes, des guides optimisés favorisant l'acquisition de nouveaux donateurs.\n",
       "duration": "2022-Présent",
       "title": "Assistante technique (temps partiel)"
@@ -90,5 +100,5 @@
       "Agile/Scrum"
     ]
   },
-  "summary": "Diplômée en informatique à l'Université de Montréal, je possède une expérience pratique en développement logiciel, traitement et analyse de données ainsi qu'en création d'utils orientés données. Actuellement Ingénieure de données chez Jarvis, je conçois et implémente des workflows de données, des scripts d'automatisation et des composants backend en utilisant Python, SQL, Java, Bash/Shell, Docker et divers outils Linux. Je collabore au sein d'une équipe Agile pour livrer des solutions fiables, performantes et facilement maintenables. Mon parcours m'a permis de développer une solide base en modélisation de données, développement de pipelines et résolution efficace de problèmes techniques. Je suis motivée à appliquer mes compétences en ingénierie et analyse de données, ou tout domaine connexe, tout en continuant de développer mon expertise.\n"
+  "summary": "Diplômée en informatique à l'Université de Montréal, je possède une expérience pratique en développement logiciel, traitement et analyse de données ainsi qu'en création d'outils orientés données. Actuellement Ingénieure de données chez Jarvis, je conçois et implémente des workflows de données, des scripts d'automatisation et des composants backend en utilisant Python, SQL, Java, Bash/Shell, Docker et divers outils Linux. Je collabore au sein d'une équipe Agile pour livrer des solutions fiables, performantes et facilement maintenables. Mon parcours m'a permis de développer une solide base en modélisation de données, développement de pipelines et résolution efficace de problèmes techniques. Je suis motivée à appliquer mes compétences en ingénierie et analyse de données, ou tout domaine connexe, tout en continuant de développer mon expertise.\n"
 }
