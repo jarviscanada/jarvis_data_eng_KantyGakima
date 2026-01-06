@@ -8,8 +8,8 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_KantyGakim
 summary: >
   Computer Science graduate from Université de Montréal with  hands-on experience in software development, data processing, and building data-driven tools.
   Currently working as a Data Engineer at Jarvis, where I design and implement data workflows, automation scripts, and backend components using Python, SQL, Java, Bash, Docker, and Linux-based tooling.
-  I work within an Agile/Scrum environment, collaborating with the team to deliver reliable, well-structured solutions. I have developed a strong foundation in data modelling,
-  pipeline development, and efficient problem-solving. Eager to apply my skills in data engineering, analytics, or related fields while continuing to grow my expertise.
+  I work in an Agile/Scrum environment, collaborating with the team to deliver reliable, well-structured solutions. I have developed a strong foundation in data modelling,
+  pipeline development, analytics, and efficient problem-solving. Eager to apply my skills in data engineering, analytics, or related fields while continuing to grow my expertise.
 
 
 # Group your skills by level.
@@ -51,26 +51,25 @@ jarvis_projects:
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: >
       Implemented a monitoring system using Bash/Shell scripts and Linux utilities to collect hardware specifications and real-time usage metrics from multiple Linux hosts. 
-      Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous data ingestion using crontab. 
+      Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous data ingestion with crontab. 
       The system provides a centralized and reliable data pipeline for performance monitoring, analytics, and maintenance.
 
   - name: "Python Data Analytics - London Gift Shop(LGS) Proof of Concept"
-    git_url: "/python_data_analytics"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_KantyGakima/tree/develop/python_data_analytics"
     description: >
-      Designed and delivered a proof-of-concept analytics solution to help an e-commerce retailer understand customer purchasing 
-      behaviour and improve revenue strategy. Loaded a historical SQL export into a Dockerized PostgreSQL database, cleaned and
-      analyzed the data using Python, Pandas, Numpy, and Matplotlib in Jupyter Notebook. Genrated insights on seasonal trends, 
-      customer retention, cancellation patterns, Geographic concentration  and RFM-based segmentation, providing actionable recommendations for targeted 
-      marketing strategies
+      Designed and delivered a proof of concept analytics solution to help a UK-based online store, understand customer purchasing 
+      behaviour and increase revenue. Loaded historical SQL exports into a Dockerized PostgreSQL database, then cleaned and
+      analyzed the data using Python, Pandas, NumPy, and Matplotlib in Jupyter Notebook. Generated insights on seasonal trends, 
+      customer retention, cancellation patterns, Geographic concentration  and RFM-based segmentation to support targeted marketing
+      strategies and revenue growth decisions.
 
   - name: "Java Grep App"
-    git_url: "/core_java"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_KantyGakima/tree/develop/core_java/grep"
     description: >
-      Developed a Java command-line application that recursively searches files ina directory for lines matching a user defined
-      regular expression and writes all matching to an output file, similar to `egrep -r`. Implemented file traversal, regex pattern
-      matching and efficient file I/O using Java streams. Packaged the application as both a runnable JAR and a docker image.
+      Developed a Java command-line application that recursively searches files ina directory for lines matching a user-defined
+      regular expression and writes matches to an output file, similar to `egrep -r`. Implemented recursive file traversal, regex pattern
+      matching and efficient file I/O using Java streams and Lambdas. Packaged the application as a runnable JAR and Docker image.
       
-        
     
 
 # List of personal or academic projects
@@ -85,10 +84,9 @@ highlighted_projects:
   - name: "Recipe Management Web App"
     git_url: "https://github.com/Kanty-G/Recipe-management-application.git"
     description: >
-      Developed a full-stack web application that helps users store all their favourite recipes in one place and keep them easily accessible.
+      Built a full-stack web application that helps users store and share all their favorite recipes in one place and keep them easily accessible.
       The app allows any user to add, edit, and delete their own recipes, with updates appearing in real time for everyone. Built using PHP, MySQL, JavaScript,
-      HTML, CSS, and supported by a simple REST API with asynchronous fetch requests to handle all CRUD operations and keep the interface in sync.rt CRUD operations
-      and instant synchronization.
+      HTML, CSS, and REST API with asynchronous fetch requests to handle all CRUD operations and keep the interface in sync.
 
   - name: "Travel reservation system"
     description: >
