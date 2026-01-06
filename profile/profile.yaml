@@ -1,7 +1,7 @@
 # Preferred name (Characters only)
 name: "Kanty Gakima"
 # Your GitHub repo root URL
-github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_KantyGakima
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
@@ -53,6 +53,25 @@ jarvis_projects:
       Implemented a monitoring system using Bash/Shell scripts and Linux utilities to collect hardware specifications and real-time usage metrics from multiple Linux hosts. 
       Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous data ingestion using crontab. 
       The system provides a centralized and reliable data pipeline for performance monitoring, analytics, and maintenance.
+
+  - name: "Python Data Analytics - London Gift Shop(LGS) Proof of Concept"
+    git_url: "/python_data_analytics"
+    description: >
+      Designed and delivered a proof-of-concept analytics solution to help an e-commerce retailer understand customer purchasing 
+      behaviour and improve revenue strategy. Loaded a historical SQL export into a Dockerized PostgreSQL database, cleaned and
+      analyzed the data using Python, Pandas, Numpy, and Matplotlib in Jupyter Notebook. Genrated insights on seasonal trends, 
+      customer retention, cancellation patterns, Geographic concentration  and RFM-based segmentation, providing actionable recommendations for targeted 
+      marketing strategies
+
+  - name: "Java Grep App"
+    git_url: "/core_java"
+    description: >
+      Developed a Java command-line application that recursively searches files ina directory for lines matching a user defined
+      regular expression and writes all matching to an output file, similar to `egrep -r`. Implemented file traversal, regex pattern
+      matching and efficient file I/O using Java streams. Packaged the application as both a runnable JAR and a docker image.
+      
+        
+    
 
 # List of personal or academic projects
 # Feel free to add more projects

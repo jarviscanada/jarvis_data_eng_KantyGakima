@@ -13,10 +13,18 @@ Computer Science graduate from Université de Montréal with  hands-on experienc
 
 ## Jarvis Projects
 
-Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git)
+Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KantyGakima](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima)
 
 
-**Linux Cluster Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima.git/tree/master/linux_sql)]: Implemented a monitoring system using Bash/Shell scripts and Linux utilities to collect hardware specifications and real-time usage metrics from multiple Linux hosts.  Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous data ingestion using crontab.  The system provides a centralized and reliable data pipeline for performance monitoring, analytics, and maintenance.
+**Linux Cluster Monitoring Agent** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima/tree/master/linux_sql)]: Implemented a monitoring system using Bash/Shell scripts and Linux utilities to collect hardware specifications and real-time usage metrics from multiple Linux hosts.  Deployed a Docker-containerized PostgreSQL database to store collected data and automated continuous data ingestion using crontab.  The system provides a centralized and reliable data pipeline for performance monitoring, analytics, and maintenance.
+
+
+**Python Data Analytics - London Gift Shop(LGS) Proof of Concept** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima/tree/master/python_data_analytics)]: Designed and delivered a proof-of-concept analytics solution to help an e-commerce retailer understand customer purchasing  behaviour and improve revenue strategy. Loaded a historical SQL export into a Dockerized PostgreSQL database, cleaned and analyzed the data using Python, Pandas, Numpy, and Matplotlib in Jupyter Notebook. Genrated insights on seasonal trends,  customer retention, cancellation patterns, Geographic concentration  and RFM-based segmentation, providing actionable recommendations for targeted  marketing strategies
+
+
+**Java Grep App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KantyGakima/tree/master/core_java)]: Developed a Java command-line application that recursively searches files ina directory for lines matching a user defined regular expression and writes all matching to an output file, similar to `egrep -r`. Implemented file traversal, regex pattern matching and efficient file I/O using Java streams. Packaged the application as both a runnable JAR and a docker image.
+
+  
 
 
 
