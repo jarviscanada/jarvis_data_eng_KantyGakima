@@ -1,5 +1,9 @@
 package ca.jrvs.apps.grep;
 
+import org.apache.log4j.BasicConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,12 +18,18 @@ import java.util.stream.Stream;
 public class JavaGrepLambdaImp extends JavaGrepImp{
 
     public static void main(String[] args) {
+
+
+        final Logger logger = LoggerFactory.getLogger(JavaGrepLambdaImp.class);
+
         if (args.length !=3) {
             throw new IllegalArgumentException("USAGE: JavaGrepLambdaImp regex rootpath outFile");
         }
 
-        JavaGrepLambdaImp javaGrepLambdaImp = new JavaGrepLambdaImp();
+        //use default logger config
+        BasicConfigurator.configure();
 
+        JavaGrepLambdaImp javaGrepLambdaImp = new JavaGrepLambdaImp();
         javaGrepLambdaImp.setRegex(args[0]);
         javaGrepLambdaImp.setRootPath(args[1]);
         javaGrepLambdaImp.setOutFile(args[2]);
@@ -27,7 +37,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
         try {
             javaGrepLambdaImp.process();
         } catch (Exception ex) {
-                ex.printStackTrace();
+            javaGrepLambdaImp.logger.error("Error: Unable to process", ex);
         }
     }
 
@@ -50,7 +60,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
                                 throw new RuntimeException(e);
                             }
                         })
-                        .filter(line -> containsPattern(line))
+                        .filter(this::containsPattern)
                         .collect(Collectors.toList());
         writeToFile(matchedLines);
         logger.info("Process completed. Matched {} lines.", matchedLines.size());
