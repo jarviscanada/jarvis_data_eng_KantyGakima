@@ -23,6 +23,26 @@ public class JavaGrepImp implements JavaGrep{
     private String outFile;
     private Pattern pattern;
 
+    public static void main(String[] args) {
+        if(args.length != 3) {
+            throw new IllegalArgumentException("USAGE: JavaGrepImp regex rootpath outFile");
+        }
+
+        //use default logger config
+        BasicConfigurator.configure();
+
+        JavaGrepImp javaGrepImp = new JavaGrepImp();
+        javaGrepImp.setRegex(args[0]);
+        javaGrepImp.setRootPath(args[1]);
+        javaGrepImp.setOutFile(args[2]);
+
+        try{
+            javaGrepImp.process();
+        } catch (Exception ex) {
+            javaGrepImp.logger.error("Error: Unable to process", ex);
+        }
+    }
+
     @Override
     public void process() throws IOException {
         logger.info("Starting process. regex={}, rootPath={}, outFile={}",
@@ -55,7 +75,6 @@ public class JavaGrepImp implements JavaGrep{
             files.add(root);
             return files;
         }
-
         for (File f : Objects.requireNonNull(root.listFiles())){
             if(f.isDirectory()) {
                 files.addAll(listFiles(f.getAbsolutePath()));
@@ -63,9 +82,7 @@ public class JavaGrepImp implements JavaGrep{
                 files.add(f);
             }
         }
-
         return files;
-
     }
 
     @Override
@@ -83,7 +100,6 @@ public class JavaGrepImp implements JavaGrep{
                 lines.add(line);
             }
         }
-
         return lines;
     }
 
@@ -162,23 +178,4 @@ public class JavaGrepImp implements JavaGrep{
         this.outFile = outFile;
     }
 
-    public static void main(String[] args) {
-        if(args.length != 3) {
-            throw new IllegalArgumentException("USAGE: JavaGrepImp regex rootpath outFile");
-        }
-
-        //use default logger config
-        BasicConfigurator.configure();
-
-        JavaGrepImp javaGrepImp = new JavaGrepImp();
-        javaGrepImp.setRegex(args[0]);
-        javaGrepImp.setRootPath(args[1]);
-        javaGrepImp.setOutFile(args[2]);
-
-        try{
-            javaGrepImp.process();
-        } catch (Exception ex) {
-            javaGrepImp.logger.error("Error: Unable to process", ex);
-        }
-    }
 }
