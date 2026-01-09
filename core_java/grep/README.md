@@ -1,23 +1,99 @@
 # Introduction
-(50-100 words)
-Discuss the design of each app. What does the app do? What technologies have you used? (e.g. core java, libraries, lambda, IDE, docker, etc..)
+The Java Grep application is a command-line tool designed to recursively search files within a directory and extract lines 
+that match a given regular expression. It efficiently processes large text datasets and writes matching results to an output file.
+
+The project is built using several core technologies:
+
+* Core Java for portability and file I/O operations.
+* Java Streams and Lambda expressions for concise data processing
+* Regular Expressions (Regex) for  pattern matching
+* Libraries like SLF4J with Log4j for structured logging
+* Maven for dependency management and packaging
+* Docker for containerized execution
 
 # Quick Start
-How to use your apps?
 
-#Implemenation
+**Build the application**\
+Build the project and generate a runnable fat JAR using Maven:
+
+```
+mvn clean package
+```
+**Run locally**
+```
+java -jar target/grep-1.0-SNAPSHOT.jar \
+".*Romeo.*Juliet.*" <root_directory> <output_file>
+```
+Example
+```
+java -jar target/grep-1.0-SNAPSHOT.jar \
+".*Romeo.*Juliet.*" \data out\grep_out.txt
+```
+**Run using docker**\
+Docker allows the application to run without installing Java or Maven locally.
+
+Build the Docker image 
+```
+docker build -t java-grep . 
+```
+*Note*: A Docker Hub account is not required unless you plan to push the image to a remote registry.
+
+Run the container:
+```
+docker run --rm \
+-v "$(pwd)/data:/data" \
+-v "$(pwd)/log:/log" \
+${docker_user}/grep \
+".*Romeo.*Juliet.*" /data /log/grep.out
+```
+# Implementation
 ## Pseudocode
-write `process` method pseudocode.
+```
+Process():
+    matchedLines = []
+    for file in listFiles(rootDir):
+      for line in readLines(file)
+          if containsPattern(line)
+            matchedLines.add(line)
+    writeToFile(matchedLines)
+```
 
 ## Performance Issue
-(30-60 words)
-Discuss the memory issue and how would you fix it
+The main performance concern is memory usage, as matched lines are accumulated in matchedlines list before being written
+to disk. For a large datasets, this could lead to high memory consumption. To improve this, matched lines, could be written
+incrementally to the output file instead of being stored in a list to reduce heap usage.
 
 # Test
-How did you test your application manually? (e.g. prepare sample data, run some test cases manually, compare result)
-
+The application was tested manually by:
+* Preparing sample text files with known matching and non-matching lines in `/data` directory
+* Running the application with different regex patterns
+* Verifying the output file contents against expected results
+* Testing edge cases such as empty directories, invalid paths and not matches
+* Running the application on multiple directory structures to validate recursive traversal
 # Deployment
-How you dockerize your app for easier distribution?
+This project is containerized with Docker for consistent execution across environments.
+## Docker packaging : Dockerfile
+- Builds a lightweight runtime image (JRE)
+- Copies the fat JAR into the container
+- Runs the application via `java -jar`
+
+## Optional: Push the image to Docker Hub
+Only required if you want to distribute the image publicly.
+
+```bash
+#Register Docker hub account
+docker_user=your_docker_id
+docker login -u ${docker_user} --password-stdin 
+#build a new docker image locally
+docker build -t ${docker_user}/grep
+#Run docker container
+docker run --rm \
+-v `pwd`/data:/data -v `pwd`/log:/log \
+${docker_user}/grep "".*Romeo.*Juliet.*"" /data /log/grep.out
+
+#push your image to Docker Hub
+docker push ${docker_user}/grep
+```
+
 
 # Improvement
-List three things you can improve in this project.

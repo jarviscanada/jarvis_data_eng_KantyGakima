@@ -19,9 +19,6 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
 
     public static void main(String[] args) {
 
-
-        final Logger logger = LoggerFactory.getLogger(JavaGrepLambdaImp.class);
-
         if (args.length !=3) {
             throw new IllegalArgumentException("USAGE: JavaGrepLambdaImp regex rootpath outFile");
         }
@@ -47,6 +44,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
      */
     @Override
     public void process() throws IOException {
+
         logger.info("Starting process. regex={}, rootPath={}, outFile={}",
                 getRegex(), getRootPath(), getOutFile());
         //compile regex
@@ -62,7 +60,9 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
                         })
                         .filter(this::containsPattern)
                         .collect(Collectors.toList());
+
         writeToFile(matchedLines);
+
         logger.info("Process completed. Matched {} lines.", matchedLines.size());
     }
 
