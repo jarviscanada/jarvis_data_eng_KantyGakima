@@ -28,7 +28,7 @@ Example: \
 This command searches foa regex pattern in /data directory and output the matching lines in out/grep_out.txt 
 ```
 java -jar target/grep-1.0-SNAPSHOT.jar \
-".*Romeo.*Juliet.*" /data out/grep_out.txt
+".*Romeo.*Juliet.*" ./data out/grep_out.txt
 ```
 **Run using docker**\
 Docker allows the application to run without installing Java or Maven locally.
@@ -44,7 +44,7 @@ Run the container:
 docker run --rm \
 -v "$(pwd)/data:/data" \
 -v "$(pwd)/log:/log" \
-${docker_user}/grep \
+java-grep \
 ".*Romeo.*Juliet.*" /data /log/grep.out
 ```
 # Implementation
@@ -87,11 +87,11 @@ Only required if you want to distribute the image publicly.
 docker_user=your_docker_id
 docker login -u ${docker_user}  
 #build a new docker image locally
-docker build -t ${docker_user}/grep
+docker build -t ${docker_user}/grep .
 #Run docker container
 docker run --rm \
 -v `pwd`/data:/data -v `pwd`/log:/log \
-${docker_user}/grep "".*Romeo.*Juliet.*"" /data /log/grep.out
+${docker_user}/grep ".*Romeo.*Juliet.*" /data /log/grep.out
 
 #push your image to Docker Hub
 docker push ${docker_user}/grep
