@@ -24,7 +24,8 @@ mvn clean package
 java -jar target/grep-1.0-SNAPSHOT.jar \
 ".*Romeo.*Juliet.*" <root_directory> <output_file>
 ```
-Example : This command search foa regex pattern in /data directory and output the matching lines in out/grep_out.txt 
+Example: \
+This command searches foa regex pattern in /data directory and output the matching lines in out/grep_out.txt 
 ```
 java -jar target/grep-1.0-SNAPSHOT.jar \
 ".*Romeo.*Juliet.*" /data out/grep_out.txt
@@ -60,8 +61,9 @@ Process():
 
 ## Performance Issue
 The main performance concern is memory usage, as matched lines are accumulated in matchedlines list before being written
-to disk. For a large datasets, this could lead to high memory consumption. To improve this, matched lines, could be written
-incrementally to the output file instead of being stored in a list to reduce heap usage.
+to disk. For a large datasets, this can lead to high memory consumption.This issue can be improved by writing matched lines
+incrementally to the output file instead of storing them in a list.
+
 
 # Test
 The application was tested manually by:
@@ -73,7 +75,7 @@ The application was tested manually by:
 # Deployment
 This project is containerized with Docker for consistent execution across environments.
 ## Docker packaging : Dockerfile
-- Builds a lightweight runtime image (JRE)
+- Uses a lightweight runtime image (JRE)
 - Copies the fat JAR into the container
 - Runs the application via `java -jar`
 
@@ -83,7 +85,7 @@ Only required if you want to distribute the image publicly.
 ```bash
 #Register Docker hub account
 docker_user=your_docker_id
-docker login -u ${docker_user} --password-stdin 
+docker login -u ${docker_user}  
 #build a new docker image locally
 docker build -t ${docker_user}/grep
 #Run docker container
@@ -98,6 +100,6 @@ docker push ${docker_user}/grep
 
 # Improvement
 * Stream matched lines directly to the output file to reduce memory usage.
-* Add automated tests for regex matching, file traversal and output generation(JUnit).
+* Add automated tests for regex matching, file traversal and output generation JUnit.
 * Use parallel processing, so that multiple files can be scanned at the same time, which can
   significantly reduce execution time when we many large files.
