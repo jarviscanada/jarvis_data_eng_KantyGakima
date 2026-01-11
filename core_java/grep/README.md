@@ -4,12 +4,12 @@ that match a given regular expression. It efficiently processes large text datas
 
 The project is built using several core technologies:
 
-* Core Java for portability and file I/O operations.
-* Java Streams and Lambda expressions for concise data processing
-* Regular Expressions (Regex) for  pattern matching
-* Libraries like SLF4J with Log4j for structured logging
-* Maven for dependency management and packaging
-* Docker for containerized execution
+* `Core Java` for portability and file I/O operations.
+* `Java Streams` and Lambda expressions for concise data processing
+* Regular Expressions (`Regex`) for  pattern matching
+* Libraries like `SLF4J` with `Log4j` for structured logging
+* `Maven` for dependency management and packaging
+* `Docker` for containerized execution
 
 # Quick Start
 
@@ -24,10 +24,10 @@ mvn clean package
 java -jar target/grep-1.0-SNAPSHOT.jar \
 ".*Romeo.*Juliet.*" <root_directory> <output_file>
 ```
-Example
+Example : This command search foa regex pattern in /data directory and output the matching lines in out/grep_out.txt 
 ```
 java -jar target/grep-1.0-SNAPSHOT.jar \
-".*Romeo.*Juliet.*" \data out\grep_out.txt
+".*Romeo.*Juliet.*" /data out/grep_out.txt
 ```
 **Run using docker**\
 Docker allows the application to run without installing Java or Maven locally.
@@ -97,3 +97,7 @@ docker push ${docker_user}/grep
 
 
 # Improvement
+* Stream matched lines directly to the output file to reduce memory usage.
+* Add automated tests for regex matching, file traversal and output generation(JUnit).
+* Use parallel processing, so that multiple files can be scanned at the same time, which can
+  significantly reduce execution time when we many large files.
