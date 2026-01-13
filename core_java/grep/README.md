@@ -25,7 +25,7 @@ java -jar target/grep-1.0-SNAPSHOT.jar \
 ".*Romeo.*Juliet.*" <root_directory> <output_file>
 ```
 Example: \
-This command searches foa regex pattern in /data directory and output the matching lines in out/grep_out.txt 
+This command searches for regex pattern in /data directory and output the matching lines in out/grep_out.txt 
 ```
 java -jar target/grep-1.0-SNAPSHOT.jar \
 ".*Romeo.*Juliet.*" ./data out/grep_out.txt
@@ -34,13 +34,9 @@ java -jar target/grep-1.0-SNAPSHOT.jar \
 Docker allows the application to run without installing Java or Maven locally.
 
 Build the Docker image 
-```
+```bash
 docker build -t java-grep . 
-```
-*Note*: A Docker Hub account is not required unless you plan to push the image to a remote registry.
 
-Run the container:
-```
 docker run --rm \
 -v "$(pwd)/data:/data" \
 -v "$(pwd)/log:/log" \
@@ -73,30 +69,42 @@ The application was tested manually by:
 * Testing edge cases such as empty directories, invalid paths and not matches
 * Running the application on multiple directory structures to validate recursive traversal
 # Deployment
-This project is containerized with Docker for consistent execution across environments.
-## Docker packaging : Dockerfile
-- Uses a lightweight runtime image (JRE)
+This project is containerized with Docker to ensure consistent execution across environments and
+simplify distribution.
+## Docker packaging (Dockerfile)
+- Uses a lightweight runtime image
 - Copies the fat JAR into the container
 - Runs the application via `java -jar`
+```bash
+cd core_java/grep
 
-## Optional: Push the image to Docker Hub
+cat > Dockerfile << EOF
+FROM eclipse-temurin:17-jre-alpine
+COPY target/grep*.jar /usr/local/app/grep/lib/grep.jar
+ENTRYPOINT ["java","-jar","/usr/local/app/grep/lib/grep.jar"]
+EOF
+```
+## Push the image to Docker Hub
 Only required if you want to distribute the image publicly.
 
 ```bash
-#Register Docker hub account
+#Package the java app
+mvn clean package
+
+#Registrer to docker hub account
 docker_user=your_docker_id
-docker login -u ${docker_user}  
+docker login -u ${docker_user}
+
 #build a new docker image locally
 docker build -t ${docker_user}/grep .
-#Run docker container
+#run docker container
 docker run --rm \
 -v `pwd`/data:/data -v `pwd`/log:/log \
 ${docker_user}/grep ".*Romeo.*Juliet.*" /data /log/grep.out
 
-#push your image to Docker Hub
+#push the image to Docker Hub
 docker push ${docker_user}/grep
 ```
-
 
 # Improvement
 * Stream matched lines directly to the output file to reduce memory usage.
