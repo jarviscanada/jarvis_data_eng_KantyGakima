@@ -108,5 +108,5 @@ docker push ${docker_user}/grep
 
 # Improvement
 * Stream matched lines directly to the output file to reduce memory usage.
-* Add automated tests for regex matching, file traversal and output generation JUnit.
+* Add automated tests for regex matching, file traversal and output generation.
 * Use parallel file processing so multiple files can be scanned concurrently, improving performance on large directory trees.
